@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Achaman Creative Solutions | Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="theme-light">
+    <!-- HEADER -->
+    <header class="navbar">
+      <div class="container nav-inner">
+        <div class="brand">
+          <img src="assets/img/logo.png" alt="Achaman Creative Solutions logo" />
+          <div class="brand-text">
+            <span class="brand-name-ne">आचमन</span>
+            <span class="brand-name-en">CREATIVE SOLUTIONS</span>
+          </div>
+        </div>
+
+        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link" data-i18n="nav.home"></a>
+          <a href="about.html" class="nav-link" data-i18n="nav.about"></a>
+          <a href="services.html" class="nav-link" data-i18n="nav.services"></a>
+          <a
+            href="research-innovation.html"
+            class="nav-link"
+            data-i18n="nav.research"
+          ></a>
+          <a
+            href="exam-preparation.html"
+            class="nav-link"
+            data-i18n="nav.examPrep"
+          ></a>
+          <a href="team.html" class="nav-link" data-i18n="nav.team"></a>
+          <a href="contact.html" class="nav-link" data-i18n="nav.contact"></a>
+        </nav>
+
+        <div class="nav-controls">
+          <button class="chip-toggle" data-lang-toggle="en" type="button">
+            EN
+          </button>
+          <button class="chip-toggle" data-lang-toggle="np" type="button">
+            ने
+          </button>
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">
+            🌙
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h1 class="section-title" data-i18n="contact.title"></h1>
+            <p class="section-subtitle" data-i18n="contact.sub"></p>
+          </div>
+
+          <div class="contact-layout">
+            <!-- FORM -->
+            <div>
+              <div id="contact-alert" class="alert"></div>
+
+              <form id="contact-form">
+                <div class="form-row-inline">
+                  <div class="form-field">
+                    <label
+                      class="label"
+                      for="name"
+                      data-i18n="contact.form.name"
+                    ></label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div class="form-field">
+                    <label
+                      class="label"
+                      for="email"
+                      data-i18n="contact.form.email"
+                    ></label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                </div>
+
+                <div class="form-row-inline">
+                  <div class="form-field">
+                    <label
+                      class="label"
+                      for="phone"
+                      data-i18n="contact.form.phone"
+                    ></label>
+                    <input type="tel" id="phone" name="phone" />
+                  </div>
+                  <div class="form-field">
+                    <label
+                      class="label"
+                      for="type"
+                      data-i18n="contact.form.type"
+                    ></label>
+                    <select id="type" name="type">
+                      <option
+                        value="general"
+                        data-i18n="contact.form.type.general"
+                      ></option>
+                      <option
+                        value="research"
+                        data-i18n="contact.form.type.research"
+                      ></option>
+                      <option
+                        value="loksewa"
+                        data-i18n="contact.form.type.loksewa"
+                      ></option>
+                      <option
+                        value="sikshak"
+                        data-i18n="contact.form.type.sikshak"
+                      ></option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label
+                    class="label"
+                    for="subject"
+                    data-i18n="contact.form.subject"
+                  ></label>
+                  <input type="text" id="subject" name="subject" />
+                </div>
+
+                <div class="form-field">
+                  <label
+                    class="label"
+                    for="message"
+                    data-i18n="contact.form.message"
+                  ></label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button
+                  class="btn btn-primary"
+                  type="submit"
+                  data-i18n="contact.form.submit"
+                ></button>
+              </form>
+            </div>
+
+            <!-- INFO -->
+            <aside class="card">
+              <h2 class="card-title" data-i18n="contact.info.title"></h2>
+              <p class="card-text" data-i18n="contact.info.address"></p>
+
+              <p class="card-text" style="margin-top: 0.8rem;">
+                <strong data-i18n="contact.info.email"></strong>:
+                <a href="mailto:arcbhattarai11@gmail.com"
+                  >arcbhattarai11@gmail.com</a
+                >
+              </p>
+              <p class="card-text">
+                <strong data-i18n="contact.info.phone"></strong>:
+                <a href="tel:9848023682">9848023682</a>
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          <div data-i18n="footer.copy"></div>
+          <div data-i18n="footer.tagline"></div>
+        </div>
+        <div class="footer-social">
+          <span data-i18n="footer.social"></span>
+          <a
+            href="#"
+            class="social-link"
+            target="_blank"
+            rel="noopener"
+            data-fb-link
+          >
+            Facebook
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp FAB -->
+    <button class="whatsapp-fab" type="button" aria-label="Chat on WhatsApp">
+      ☎
+    </button>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Achaman | Exam Preparation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="theme-light">
+    <!-- HEADER (same as index) -->
+    <header class="navbar">
+      <div class="container nav-inner">
+        <div class="brand">
+          <img src="assets/img/logo.png" alt="Achaman Creative Solutions logo" />
+          <div class="brand-text">
+            <span class="brand-name-ne">आचमन</span>
+            <span class="brand-name-en">CREATIVE SOLUTIONS</span>
+          </div>
+        </div>
+
+        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link" data-i18n="nav.home"></a>
+          <a href="about.html" class="nav-link" data-i18n="nav.about"></a>
+          <a href="services.html" class="nav-link" data-i18n="nav.services"></a>
+          <a
+            href="research-innovation.html"
+            class="nav-link"
+            data-i18n="nav.research"
+          ></a>
+          <a
+            href="exam-preparation.html"
+            class="nav-link"
+            data-i18n="nav.examPrep"
+          ></a>
+          <a href="team.html" class="nav-link" data-i18n="nav.team"></a>
+          <a href="contact.html" class="nav-link" data-i18n="nav.contact"></a>
+        </nav>
+
+        <div class="nav-controls">
+          <button
+            class="chip-toggle"
+            data-lang-toggle="en"
+            type="button"
+          >
+            EN
+          </button>
+          <button
+            class="chip-toggle"
+            data-lang-toggle="np"
+            type="button"
+          >
+            ने
+          </button>
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">
+            🌙
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h1 class="section-title" data-i18n="nav.examPrep"></h1>
+            <p class="section-subtitle">
+              <!-- small intro text, can customise later -->
+              Structured preparation space for Loksewa and Sikshak Sewa
+              aspirants. (You can edit this line later.)
+            </p>
+          </div>
+
+          <div class="exam-layout">
+            <!-- Loksewa block -->
+            <article class="card">
+              <span class="badge-pill">Loksewa</span>
+              <h2 class="card-title" data-i18n="exam.lok.title"></h2>
+              <p class="card-text" data-i18n="exam.lok.sub"></p>
+
+              <h3
+                class="section-title"
+                style="margin-top: 1rem;"
+                data-i18n="exam.lok.sectionOverview"
+              ></h3>
+              <p class="card-text" data-i18n="exam.lok.overview"></p>
+
+              <h3
+                class="section-title"
+                style="margin-top: 1rem;"
+                data-i18n="exam.lok.sectionFeatures"
+              ></h3>
+              <ul class="list-check">
+                <li data-i18n="exam.lok.f1"></li>
+                <li data-i18n="exam.lok.f2"></li>
+                <li data-i18n="exam.lok.f3"></li>
+                <li data-i18n="exam.lok.f4"></li>
+              </ul>
+
+              <h3
+                class="section-title"
+                style="margin-top: 1rem;"
+                data-i18n="exam.lok.sectionBatches"
+              ></h3>
+              <ul class="list-check">
+                <li data-i18n="exam.lok.b1"></li>
+                <li data-i18n="exam.lok.b2"></li>
+                <li data-i18n="exam.lok.b3"></li>
+                <li data-i18n="exam.lok.b4"></li>
+              </ul>
+            </article>
+
+            <!-- Sikshak block -->
+            <article class="card">
+              <span class="badge-pill">Sikshak Sewa</span>
+              <h2 class="card-title" data-i18n="exam.sik.title"></h2>
+              <p class="card-text" data-i18n="exam.sik.sub"></p>
+
+              <h3
+                class="section-title"
+                style="margin-top: 1rem;"
+                data-i18n="exam.sik.sectionOverview"
+              ></h3>
+              <p class="card-text" data-i18n="exam.sik.overview"></p>
+
+              <h3
+                class="section-title"
+                style="margin-top: 1rem;"
+                data-i18n="exam.sik.sectionFeatures"
+              ></h3>
+              <ul class="list-check">
+                <li data-i18n="exam.sik.f1"></li>
+                <li data-i18n="exam.sik.f2"></li>
+                <li data-i18n="exam.sik.f3"></li>
+                <li data-i18n="exam.sik.f4"></li>
+              </ul>
+
+              <h3
+                class="section-title"
+                style="margin-top: 1rem;"
+                data-i18n="exam.sik.sectionBatches"
+              ></h3>
+              <ul class="list-check">
+                <li data-i18n="exam.sik.b1"></li>
+                <li data-i18n="exam.sik.b2"></li>
+                <li data-i18n="exam.sik.b3"></li>
+                <li data-i18n="exam.sik.b4"></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          <div data-i18n="footer.copy"></div>
+          <div data-i18n="footer.tagline"></div>
+        </div>
+        <div class="footer-social">
+          <span data-i18n="footer.social"></span>
+          <a
+            href="#"
+            class="social-link"
+            target="_blank"
+            rel="noopener"
+            data-fb-link
+          >
+            Facebook
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp FAB -->
+    <button class="whatsapp-fab" type="button" aria-label="Chat on WhatsApp">
+      ☎
+    </button>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
