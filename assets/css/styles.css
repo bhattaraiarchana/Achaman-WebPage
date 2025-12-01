@@ -76,15 +76,14 @@ main {
   background-color: rgba(246, 245, 243, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
-  padding-block: 0.4rem; 
+  padding-block: 0.4rem;
 }
 
 /* Give the top bar a bit more horizontal room and move content left */
 .navbar .container {
-  max-width: 1240px;      /* was 1100 globally – more room for nav */
-  padding-inline: 1.25rem;/* a little closer to the screen edge */
+  max-width: 1240px;
+  padding-inline: 1.25rem;
 }
-
 
 body.theme-dark .navbar {
   background-color: rgba(15, 23, 42, 0.92);
@@ -97,7 +96,6 @@ body.theme-dark .navbar {
   gap: 1.5rem;
 }
 
-
 .brand {
   display: flex;
   align-items: center;
@@ -106,11 +104,10 @@ body.theme-dark .navbar {
 }
 
 .brand img {
-  height: 64px;   
+  height: 64px;
   width: auto;
-  margin-right: 0.6rem; 
+  margin-right: 0.6rem;
 }
-
 
 .brand-text {
   display: flex;
@@ -134,11 +131,10 @@ body.theme-dark .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1;               /* take remaining space between logo and controls */
-  gap: 1.75rem;          /* more even spacing between items */
-  flex-wrap: nowrap;     /* keep everything in one line on desktop */
+  flex: 1;
+  gap: 1.75rem;
+  flex-wrap: nowrap;
 }
-
 
 .nav-link {
   position: relative;
@@ -147,11 +143,10 @@ body.theme-dark .navbar {
   font-size: 0.9rem;
   text-decoration: none;
   color: var(--color-text);
-  white-space: nowrap;         
+  white-space: nowrap;
   transition: background-color var(--transition-fast), color var(--transition-fast),
     transform var(--transition-fast), box-shadow var(--transition-fast);
 }
-
 
 .nav-link::after {
   content: "";
@@ -194,7 +189,6 @@ body.theme-dark .navbar {
   gap: 0.6rem;
   margin-left: 0.5rem;
 }
-
 
 .chip-toggle {
   display: inline-flex;
@@ -382,7 +376,9 @@ body.theme-dark .navbar {
   color: var(--color-muted);
 }
 
-/* Section helpers */
+/* ====================
+   Sections / cards
+==================== */
 .section {
   padding: 2rem 0 1rem;
 }
@@ -395,9 +391,10 @@ body.theme-dark .navbar {
   gap: 0.5rem;
   margin-bottom: 1.2rem;
 }
+
 /* Left-aligned section header for “Why Achaman?” and similar blocks */
 .section-header-left {
-   display: block; 
+  display: block;
   text-align: left;
 }
 
@@ -407,7 +404,6 @@ body.theme-dark .navbar {
   margin-top: 0.5rem;
   padding-left: 0.1rem;
 }
-
 
 .section-title {
   font-size: 1.3rem;
@@ -541,7 +537,7 @@ body.theme-dark .navbar {
 }
 
 /* ====================
-   CONTACT
+   CONTACT (legacy layout)
 ==================== */
 .contact-layout {
   display: grid;
@@ -609,206 +605,19 @@ textarea:focus {
   color: #047857;
 }
 
-/* ====================
-   FOOTER
-==================== */
-.site-footer {
-  border-top: 1px solid var(--color-border);
-  margin-top: 3rem;
-  padding: 1.5rem 0 2.25rem;
-  background-color: var(--color-surface);
-}
-
-.footer-inner {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem;
-  font-size: 0.9rem;
-}
-
-.footer-left {
-  max-width: 420px;
-}
-
-.footer-brand {
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
-.footer-tagline {
-  color: var(--color-muted);
-  margin-bottom: 0.6rem;
-}
-
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--color-muted);
-}
-
-.footer-nav a {
-  text-decoration: none;
-  color: var(--color-muted);
-  font-size: 0.85rem;
-}
-
-.footer-nav a:hover {
-  color: var(--color-accent);
-}
-
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.5rem;
-}
-
-.footer-social-label {
-  color: var(--color-muted);
-  font-size: 0.85rem;
-}
-
-.footer-social-icons {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.footer-icon-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--color-border);
-  background-color: #ffffff;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease,
-    background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-}
-
-.footer-icon-btn span {
-  line-height: 1;
-}
-
-/* Facebook button */
-.fb-btn {
-  background-color: #1877f2;
-  border-color: #1877f2;
-  color: #ffffff;
-}
-
-/* WhatsApp button */
-.wa-btn {
-  background-color: #25d366;
-  border-color: #25d366;
-  color: #ffffff;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-/* Hover states */
-.footer-icon-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-}
-
-
-/* ====================
-   WHATSAPP FLOAT
-==================== */
-.whatsapp-fab {
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  z-index: 60;
-  width: 52px;
-  height: 52px;
-  border-radius: 999px;
-  border: none;
-  background: #25d366;
-  color: #f9fafb;
-  font-size: 1.4rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
-  cursor: pointer;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast), opacity var(--transition-fast);
-}
-
-.whatsapp-fab:hover {
-  transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
-}
-
-/* ====================
-   RESPONSIVE
-==================== */
-@media (max-width: 900px) {
-  .hero-grid,
-  .exam-layout,
-  .contact-layout {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .grid-3 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 720px) {
-  .container {
-    padding-inline: 1rem;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 0.75rem;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .nav-toggle {
-    display: inline-flex;
-  }
-
-  .hero {
-    padding-top: 1.7rem;
-  }
-
-  .hero-grid {
-    gap: 1.4rem;
-  }
-
-  .grid-3 {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
-
 /* ========================
    NEW IMPROVED FOOTER
 =========================*/
 
+/* Base footer box (shared) */
 .site-footer {
-  background-color: #ececec;   /* elegant grey that matches your logo theme */
-  border-top: 1px solid #d4d4d4;
   margin-top: 3rem;
   padding: 2.5rem 0 1.5rem;
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-bg-elevated);
 }
 
-/* Use grid so center column is really in the middle */
+/* Main grid: 3 equal columns */
 .footer-inner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -847,7 +656,7 @@ textarea:focus {
 }
 
 .footer-contact i {
-  color: var(--color-success);
+  color: var(--color-primary-soft);
   margin-top: 3px;
 }
 
@@ -858,7 +667,8 @@ textarea:focus {
 }
 
 .footer-links h4,
-.footer-right h4 {
+.footer-right h4,
+.footer-social-label {
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
@@ -875,24 +685,22 @@ textarea:focus {
   color: var(--color-primary);
 }
 
-/* Right column (icons) */
+/* Right column — centered */
 .footer-right {
-  justify-self: end;
-  text-align: right;
+  justify-self: center;     /* center inside the grid */
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* center label + icons */
+  text-align: center;
+  gap: 0.6rem;
 }
+
 
 /* Social Icons row */
 .footer-social-icons {
   display: flex;
   gap: 0.5rem;
-}
-
-/* Footer Bottom */
-.footer-bottom {
-  margin-top: 1.8rem;
-  text-align: center;
-  font-size: 0.85rem;
-  color: var(--color-muted);
+  justify-content: flex-end;  /* icons sit right under the label */
 }
 
 /* Icon Buttons */
@@ -904,24 +712,67 @@ textarea:focus {
   place-items: center;
   font-size: 1rem;
   color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.25);
+  text-decoration: none;
+  transition: transform 0.18s ease-out, box-shadow 0.18s ease-out;
 }
 
+.footer-icon-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Facebook button */
 .fb-btn {
-  background: #1877f2;
+  background-color: #1877f2;
 }
 
+/* WhatsApp button */
 .wa-btn {
-  background: #25d366;
+  background-color: #25d366;
 }
 
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 1.8rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
 
-.site-footer {
-  background-color: #ececec;   /* elegant grey that matches your logo theme */
-  border-top: 1px solid #d4d4d4;
+/* Light mode footer override */
+.theme-light .site-footer {
+  background-color: #ececec;
+  border-top-color: #d4d4d4;
+}
+
+/* Dark mode footer override */
+.theme-dark .site-footer {
+  background-color: #020617; /* deep navy/black */
+  border-top-color: #0f172a;
+}
+
+.theme-dark .footer-brand,
+.theme-dark .footer-links h4,
+.theme-dark .footer-social-label,
+.theme-dark .footer-bottom {
+  color: #e5e7eb;
+}
+
+.theme-dark .footer-contact li,
+.theme-dark .footer-links a,
+.theme-dark .contact-card-text {
+  color: #9ca3af;
+}
+
+.theme-dark .footer-links a:hover {
+  color: #e5e7eb;
 }
 
 /* ========================
-   CONTACT PAGE LAYOUT
+   CONTACT PAGE LAYOUT (new)
 =========================*/
 
 .contact-grid {
@@ -1030,19 +881,192 @@ textarea:focus {
   color: var(--color-muted);
 }
 
-/* Responsive */
+/* --------------------------
+   FIX CONTACT PAGE DARK MODE
+---------------------------*/
+
+/* Make right-side card text readable in dark mode */
+.theme-dark .contact-card-title {
+  color: #e5e7eb;         /* bright white text */
+}
+
+.theme-dark .contact-card-text,
+.theme-dark .contact-card-row dt,
+.theme-dark .contact-card-row dd,
+.theme-dark .contact-card-note {
+  color: #cfd4da !important;   /* medium-light readable grey */
+}
+
+/* Make email + phone links inside card readable */
+.theme-dark .contact-card-row a {
+  color: #38bdf8 !important;   /* soft teal-blue for links */
+}
+
+/* Fix form input text in dark mode */
+.theme-dark input,
+.theme-dark select,
+.theme-dark textarea {
+  color: #f1f5f9 !important;              /* bright text */
+  background-color: #1e293b !important;   /* dark slate */
+  border-color: #334155 !important;
+}
+
+/* Fix dropdown selected text */
+.theme-dark select option {
+  color: #f1f5f9;
+  background-color: #1e293b;
+}
+
+/* Fix placeholder text */
+.theme-dark ::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* ============================
+   CONTACT PAGE – DARK MODE FIX
+============================ */
+
+/* Make the right card dark in theme-dark */
+.theme-dark .contact-card {
+  background-color: #0f172a;        /* deep slate */
+  border: 1px solid #1f2937;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Title inside card */
+.theme-dark .contact-card-title {
+  color: #e5e7eb;                   /* bright heading */
+}
+
+/* Body text and label text inside the card */
+.theme-dark .contact-card-text,
+.theme-dark .contact-card-row dt,
+.theme-dark .contact-card-row dd,
+.theme-dark .contact-card-note {
+  color: #cbd5f5;                   /* light but readable */
+}
+
+/* Links (email / phone) in the card */
+.theme-dark .contact-card-row a {
+  color: #38bdf8;
+}
+
+/* Form fields – keep text clear in dark mode */
+.theme-dark input,
+.theme-dark select,
+.theme-dark textarea {
+  color: #f1f5f9;                   /* bright input text */
+  background-color: #111827;
+  border-color: #374151;
+}
+
+/* Dropdown options */
+.theme-dark select option {
+  color: #f1f5f9;
+  background-color: #020617;
+}
+
+/* Placeholders in dark mode */
+.theme-dark ::placeholder {
+  color: #9ca3af;
+}
+
+
+/* ====================
+   WHATSAPP FLOAT
+==================== */
+.whatsapp-fab {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 60;
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  border: none;
+  background: #25d366;
+  color: #f9fafb;
+  font-size: 1.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), opacity var(--transition-fast);
+}
+
+.whatsapp-fab:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
+}
+
+/* ====================
+   RESPONSIVE
+==================== */
 @media (max-width: 900px) {
+  .hero-grid,
+  .exam-layout,
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
 
-  .contact-card {
-    order: -1; /* show card above form on small screens if you like */
+  .footer-inner {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .footer-links {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .footer-right {
+    justify-self: start;
+    text-align: left;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0.75rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .hero {
+    padding-top: 1.7rem;
+  }
+
+  .hero-grid {
+    gap: 1.4rem;
+  }
+
+  .grid-3 {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .form-row-2 {
     grid-template-columns: 1fr;
   }
 }
-
-
