@@ -5,6 +5,14 @@
     <title>Achaman Creative Solutions | Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
   </head>
   <body class="theme-light">
     <!-- HEADER -->
@@ -53,115 +61,121 @@
     </header>
 
     <!-- MAIN -->
+        <!-- MAIN -->
     <main>
       <section class="section">
         <div class="container">
-          <div class="section-header">
-            <h1 class="section-title" data-i18n="contact.title"></h1>
-            <p class="section-subtitle" data-i18n="contact.sub"></p>
+          <div class="section-header section-header-left">
+            <h1 class="section-title">Contact</h1>
+            <p class="section-subtitle section-subtitle-narrow">
+              Reach out for research collaboration, consultancy or exam preparation inquiries.
+            </p>
           </div>
 
-          <div class="contact-layout">
-            <!-- FORM -->
-            <div>
-              <div id="contact-alert" class="alert"></div>
-
-              <form id="contact-form">
-                <div class="form-row-inline">
-                  <div class="form-field">
-                    <label
-                      class="label"
-                      for="name"
-                      data-i18n="contact.form.name"
-                    ></label>
-                    <input type="text" id="name" name="name" required />
-                  </div>
-                  <div class="form-field">
-                    <label
-                      class="label"
-                      for="email"
-                      data-i18n="contact.form.email"
-                    ></label>
-                    <input type="email" id="email" name="email" required />
-                  </div>
-                </div>
-
-                <div class="form-row-inline">
-                  <div class="form-field">
-                    <label
-                      class="label"
-                      for="phone"
-                      data-i18n="contact.form.phone"
-                    ></label>
-                    <input type="tel" id="phone" name="phone" />
-                  </div>
-                  <div class="form-field">
-                    <label
-                      class="label"
-                      for="type"
-                      data-i18n="contact.form.type"
-                    ></label>
-                    <select id="type" name="type">
-                      <option
-                        value="general"
-                        data-i18n="contact.form.type.general"
-                      ></option>
-                      <option
-                        value="research"
-                        data-i18n="contact.form.type.research"
-                      ></option>
-                      <option
-                        value="loksewa"
-                        data-i18n="contact.form.type.loksewa"
-                      ></option>
-                      <option
-                        value="sikshak"
-                        data-i18n="contact.form.type.sikshak"
-                      ></option>
-                    </select>
-                  </div>
+          <div class="contact-grid">
+            <!-- LEFT: FORM -->
+            <form class="contact-form">
+              <div class="form-row form-row-2">
+                <div class="form-field">
+                  <label for="contact-name">Full name</label>
+                  <input
+                    id="contact-name"
+                    type="text"
+                    name="name"
+                    placeholder="Your full name"
+                  />
                 </div>
 
                 <div class="form-field">
-                  <label
-                    class="label"
-                    for="subject"
-                    data-i18n="contact.form.subject"
-                  ></label>
-                  <input type="text" id="subject" name="subject" />
+                  <label for="contact-email">Email</label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    name="email"
+                    placeholder="you@example.com"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row form-row-2">
+                <div class="form-field">
+                  <label for="contact-phone">Phone</label>
+                  <input
+                    id="contact-phone"
+                    type="tel"
+                    name="phone"
+                    placeholder="+977 ..."
+                  />
                 </div>
 
                 <div class="form-field">
-                  <label
-                    class="label"
-                    for="message"
-                    data-i18n="contact.form.message"
-                  ></label>
-                  <textarea id="message" name="message" required></textarea>
+                  <label for="contact-type">Type of inquiry</label>
+                  <select id="contact-type" name="type">
+                    <option value="general">General Inquiry</option>
+                    <option value="research">Research & Consultancy</option>
+                    <option value="loksewa">Loksewa Preparation</option>
+                    <option value="sikshak">Sikshak Sewa Preparation</option>
+                  </select>
                 </div>
+              </div>
 
-                <button
-                  class="btn btn-primary"
-                  type="submit"
-                  data-i18n="contact.form.submit"
-                ></button>
-              </form>
-            </div>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="contact-subject">Subject</label>
+                  <input
+                    id="contact-subject"
+                    type="text"
+                    name="subject"
+                    placeholder="Short summary of your message"
+                  />
+                </div>
+              </div>
 
-            <!-- INFO -->
-            <aside class="card">
-              <h2 class="card-title" data-i18n="contact.info.title"></h2>
-              <p class="card-text" data-i18n="contact.info.address"></p>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="contact-message">Message</label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message here..."
+                  ></textarea>
+                </div>
+              </div>
 
-              <p class="card-text" style="margin-top: 0.8rem;">
-                <strong data-i18n="contact.info.email"></strong>:
-                <a href="mailto:arcbhattarai11@gmail.com"
-                  >arcbhattarai11@gmail.com</a
-                >
+              <div class="form-row">
+                <button type="submit" class="btn btn-primary contact-submit">
+                  Send message
+                </button>
+              </div>
+            </form>
+
+            <!-- RIGHT: ORGANIZATION CARD -->
+            <aside class="contact-card">
+              <h2 class="contact-card-title">Organization details</h2>
+              <p class="contact-card-text">
+                Kathmandu, Nepal (exact address can be updated later).
               </p>
-              <p class="card-text">
-                <strong data-i18n="contact.info.phone"></strong>:
-                <a href="tel:9848023682">9848023682</a>
+
+              <dl class="contact-card-list">
+                <div class="contact-card-row">
+                  <dt>Email</dt>
+                  <dd>
+                    <a href="mailto:arcbhattarai11@gmail.com">
+                      arcbhattarai11@gmail.com
+                    </a>
+                  </dd>
+                </div>
+                <div class="contact-card-row">
+                  <dt>Phone</dt>
+                  <dd>
+                    <a href="tel:9848023682">9848023682</a>
+                  </dd>
+                </div>
+              </dl>
+
+              <p class="contact-card-note">
+                You can also reach us via the WhatsApp button on the bottom right.
               </p>
             </aside>
           </div>
@@ -169,32 +183,57 @@
       </section>
     </main>
 
+    
+
     <!-- FOOTER -->
-    <footer>
-      <div class="container footer-inner">
-        <div>
-          <div data-i18n="footer.copy"></div>
-          <div data-i18n="footer.tagline"></div>
-        </div>
-        <div class="footer-social">
-          <span data-i18n="footer.social"></span>
-          <a
-            href="#"
-            class="social-link"
-            target="_blank"
-            rel="noopener"
-            data-fb-link
-          >
-            Facebook
-          </a>
-        </div>
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <!-- LEFT COLUMN -->
+    <div class="footer-col footer-left">
+      <h3 class="footer-brand">Achaman Creative Solutions Pvt. Ltd.</h3>
+      <p class="footer-tagline">Research • Innovation • Pedagogy</p>
+
+      <ul class="footer-contact">
+        <li><i class="fa-solid fa-envelope"></i> arcbhattarai11@gmail.com</li>
+        <li><i class="fa-solid fa-phone"></i> +977 9848023682</li>
+        <li><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal</li>
+      </ul>
+    </div>
+
+    <!-- MIDDLE COLUMN -->
+    <div class="footer-col footer-links">
+      <h4>Quick Links</h4>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="research-innovation.html">Research & Innovation</a>
+      <a href="exam-preparation.html">Exam Preparation</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="footer-col footer-right">
+      <h4>Connect with us</h4>
+      <div class="footer-social-icons">
+        <a href="#" class="footer-icon-btn fb-btn"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/9848023682" class="footer-icon-btn wa-btn"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
-    </footer>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Achaman Creative Solutions. All rights reserved.
+  </div>
+</footer>
+
 
     <!-- WhatsApp FAB -->
-    <button class="whatsapp-fab" type="button" aria-label="Chat on WhatsApp">
-      ☎
-    </button>
+    <button class="whatsapp-fab" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</button>
+
 
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>

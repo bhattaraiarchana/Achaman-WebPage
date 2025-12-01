@@ -612,47 +612,113 @@ textarea:focus {
 /* ====================
    FOOTER
 ==================== */
-footer {
+.site-footer {
   border-top: 1px solid var(--color-border);
-  padding: 1.2rem 0;
-  margin-top: 1.5rem;
-  font-size: 0.8rem;
-  color: var(--color-muted);
+  margin-top: 3rem;
+  padding: 1.5rem 0 2.25rem;
+  background-color: var(--color-surface);
 }
 
 .footer-inner {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 0.9rem;
 }
 
-.footer-social {
+.footer-left {
+  max-width: 420px;
+}
+
+.footer-brand {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.footer-tagline {
+  color: var(--color-muted);
+  margin-bottom: 0.6rem;
+}
+
+.footer-nav {
   display: flex;
-  gap: 0.6rem;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 0.5rem;
+  color: var(--color-muted);
 }
 
-.social-link {
+.footer-nav a {
+  text-decoration: none;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.footer-nav a:hover {
+  color: var(--color-accent);
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.footer-social-label {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
-  padding: 0.3rem 0.75rem;
   border: 1px solid var(--color-border);
-  font-size: 0.8rem;
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
-  color: var(--color-muted);
-  transition: background-color var(--transition-fast), color var(--transition-fast),
-    border-color var(--transition-fast), transform var(--transition-fast);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
-.social-link:hover {
-  background-color: rgba(9, 66, 95, 0.08);
-  border-color: var(--color-primary-soft);
-  color: var(--color-primary);
-  transform: translateY(-1px);
+.footer-icon-btn span {
+  line-height: 1;
 }
+
+/* Facebook button */
+.fb-btn {
+  background-color: #1877f2;
+  border-color: #1877f2;
+  color: #ffffff;
+}
+
+/* WhatsApp button */
+.wa-btn {
+  background-color: #25d366;
+  border-color: #25d366;
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* Hover states */
+.footer-icon-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
 
 /* ====================
    WHATSAPP FLOAT
@@ -729,3 +795,254 @@ footer {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+
+/* ========================
+   NEW IMPROVED FOOTER
+=========================*/
+
+.site-footer {
+  background-color: #ececec;   /* elegant grey that matches your logo theme */
+  border-top: 1px solid #d4d4d4;
+  margin-top: 3rem;
+  padding: 2.5rem 0 1.5rem;
+}
+
+/* Use grid so center column is really in the middle */
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+/* Columns */
+.footer-col {
+  min-width: 220px;
+}
+
+/* Left Column */
+.footer-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+  color: var(--color-muted);
+  margin-bottom: 0.8rem;
+}
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  color: var(--color-muted);
+}
+
+.footer-contact i {
+  color: var(--color-success);
+  margin-top: 3px;
+}
+
+/* Middle column (Quick Links) */
+.footer-links {
+  justify-self: center;
+  text-align: center;
+}
+
+.footer-links h4,
+.footer-right h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.footer-links a {
+  display: block;
+  color: var(--color-muted);
+  margin-bottom: 0.3rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-primary);
+}
+
+/* Right column (icons) */
+.footer-right {
+  justify-self: end;
+  text-align: right;
+}
+
+/* Social Icons row */
+.footer-social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 1.8rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+/* Icon Buttons */
+.footer-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.fb-btn {
+  background: #1877f2;
+}
+
+.wa-btn {
+  background: #25d366;
+}
+
+
+.site-footer {
+  background-color: #ececec;   /* elegant grey that matches your logo theme */
+  border-top: 1px solid #d4d4d4;
+}
+
+/* ========================
+   CONTACT PAGE LAYOUT
+=========================*/
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(0, 1.2fr);
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+/* Form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row {
+  width: 100%;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.form-field label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  color: var(--color-muted);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-border);
+  padding: 0.55rem 0.8rem;
+  font: inherit;
+  background-color: #ffffff;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.contact-submit {
+  margin-top: 0.4rem;
+}
+
+/* Right side card */
+.contact-card {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.contact-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.contact-card-text {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.contact-card-list {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-card-row {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.contact-card-row dt {
+  min-width: 3.2rem;
+  color: var(--color-muted);
+}
+
+.contact-card-row dd {
+  margin: 0;
+}
+
+.contact-card-row a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.contact-card-row a:hover {
+  text-decoration: underline;
+}
+
+.contact-card-note {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    order: -1; /* show card above form on small screens if you like */
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
