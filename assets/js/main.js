@@ -1,8 +1,8 @@
 // assets/js/main.js
 
 // ---------- CONFIG (public contact links only) ----------
-const WHATSAPP_NUMBER = "9848023682";
-const FACEBOOK_URL = "https://facebook.com";
+const WHATSAPP_NUMBER = "9779848023682";
+// TODO: add the official Facebook page URL only after it is verified; do not show broken public social links.
 const THEME_STORAGE_KEY = "achamanTheme";
 const LANGUAGE_STORAGE_KEY = "achamanLanguage";
 let currentLanguage = "en";
@@ -243,10 +243,20 @@ function initNoticeFilters() {
   });
 }
 
+function galleryCard(item) {
+  return `<article class="gallery-card"><div class="gallery-placeholder-box"><i class="fa-regular fa-image"></i></div><div class="gallery-card-body"><span>${item.category}</span><h3>${item.title}</h3><p>${item.caption}</p><dl><div><dt>Location</dt><dd>${item.location}</dd></div><div><dt>Date</dt><dd>${item.date}</dd></div><div><dt>Program</dt><dd>${item.relatedProgram}</dd></div></dl></div></article>`;
+}
+
 function renderGallery() {
   const gallery = document.querySelector("[data-gallery-list]");
-  if (!gallery) return;
-  gallery.innerHTML = GALLERY_ITEMS.map((item) => `<article class="gallery-card"><div class="gallery-placeholder-box"><i class="fa-regular fa-image"></i></div><div class="gallery-card-body"><span>${item.category}</span><h3>${item.title}</h3><p>${item.caption}</p><dl><div><dt>Location</dt><dd>${item.location}</dd></div><div><dt>Date</dt><dd>${item.date}</dd></div><div><dt>Program</dt><dd>${item.relatedProgram}</dd></div></dl></div></article>`).join("");
+  if (gallery) {
+    gallery.innerHTML = GALLERY_ITEMS.map(galleryCard).join("");
+  }
+
+  const preview = document.querySelector("[data-gallery-preview]");
+  if (preview) {
+    preview.innerHTML = GALLERY_ITEMS.slice(0, 6).map(galleryCard).join("");
+  }
 }
 
 function renderPrograms() {
@@ -276,14 +286,6 @@ function initContactForm() {
   });
 }
 
-// ---------- FOOTER SOCIAL ----------
-function initFooterSocial() {
-  const fbLinks = document.querySelectorAll("[data-fb-link]");
-  fbLinks.forEach((a) => {
-    a.setAttribute("href", FACEBOOK_URL);
-  });
-}
-
 // ---------- INIT ----------
 document.addEventListener("DOMContentLoaded", () => {
   initTheme();
@@ -291,7 +293,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initNavbar();
   initWhatsAppFab();
   initContactForm();
-  initFooterSocial();
   renderNotices();
   initNoticeFilters();
   renderGallery();
