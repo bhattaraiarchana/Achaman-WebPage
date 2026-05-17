@@ -20,6 +20,7 @@
 }
 
 /* Dark mode overrides */
+html.theme-dark,
 body.theme-dark {
   --color-bg: #0b1720;
   --color-bg-elevated: #111827;

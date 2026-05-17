@@ -14,6 +14,20 @@
     />
   </head>
   <body class="theme-light">
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("achamanTheme");
+          if (savedTheme === "dark") {
+            document.body.classList.remove("theme-light");
+            document.body.classList.add("theme-dark");
+            document.documentElement.classList.add("theme-dark");
+          }
+        } catch (error) {
+          // Keep the default light theme if browser preference storage is unavailable.
+        }
+      })();
+    </script>
     <header class="navbar">
       <div class="container nav-inner">
         <div class="brand">

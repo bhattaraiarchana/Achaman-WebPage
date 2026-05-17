@@ -3,6 +3,8 @@
 // ---------- CONFIG (public contact links only) ----------
 const WHATSAPP_NUMBER = "9848023682";
 const FACEBOOK_URL = "https://facebook.com";
+const THEME_STORAGE_KEY = "achamanTheme";
+const LANGUAGE_STORAGE_KEY = "achamanLanguage";
 let currentLanguage = "en";
 
 const PUBLIC_NOTICES = [
@@ -74,25 +76,45 @@ const PROGRAMS = [
 
 
 // ---------- THEME ----------
-function applyTheme(theme) {
+function readPreference(key) {
+  try {
+    return localStorage.getItem(key);
+  } catch (error) {
+    return null;
+  }
+}
+
+function savePreference(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch (error) {
+    // Preference storage is optional; keep the current page state if unavailable.
+  }
+}
+
+function applyTheme(theme, persist = true) {
+  const normalizedTheme = theme === "dark" ? "dark" : "light";
+  document.documentElement.classList.toggle("theme-dark", normalizedTheme === "dark");
   document.body.classList.remove("theme-light", "theme-dark");
-  document.body.classList.add(theme === "dark" ? "theme-dark" : "theme-light");
+  document.body.classList.add(normalizedTheme === "dark" ? "theme-dark" : "theme-light");
+
+  if (persist) {
+    savePreference(THEME_STORAGE_KEY, normalizedTheme);
+  }
 
   const toggle = document.querySelector(".theme-toggle");
   if (toggle) {
-    toggle.textContent = theme === "dark" ? "☀" : "🌙";
+    toggle.textContent = normalizedTheme === "dark" ? "☀" : "🌙";
     toggle.setAttribute(
       "aria-label",
-      theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+      normalizedTheme === "dark" ? "Switch to light mode" : "Switch to dark mode"
     );
   }
 }
 
 function initTheme() {
-  const prefersDark =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-  applyTheme(prefersDark ? "dark" : "light");
+  const savedTheme = readPreference(THEME_STORAGE_KEY);
+  applyTheme(savedTheme === "dark" ? "dark" : "light", false);
 
   const toggle = document.querySelector(".theme-toggle");
   if (toggle) {
@@ -106,10 +128,14 @@ function initTheme() {
 }
 
 // ---------- LANGUAGE ----------
-function applyLanguage(lang) {
+function applyLanguage(lang, persist = true) {
   const langKey = lang === "np" ? "np" : "en";
   currentLanguage = langKey;
   document.documentElement.setAttribute("lang", langKey === "np" ? "ne" : "en");
+
+  if (persist) {
+    savePreference(LANGUAGE_STORAGE_KEY, langKey);
+  }
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
@@ -126,7 +152,8 @@ function applyLanguage(lang) {
 }
 
 function initLanguage() {
-  applyLanguage("en");
+  const savedLanguage = readPreference(LANGUAGE_STORAGE_KEY);
+  applyLanguage(savedLanguage === "np" ? "np" : "en", false);
 
   document.querySelectorAll("[data-lang-toggle]").forEach((btn) => {
     btn.addEventListener("click", () => {
