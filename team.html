@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="theme-light">
-    <!-- HEADER -->
     <header class="navbar">
       <div class="container nav-inner">
-        <div class="brand">
+        <div class="brand" role="button" tabindex="0">
           <img src="assets/img/logo.png" alt="Achaman Creative Solutions logo" />
           <div class="brand-text">
             <span class="brand-name-ne">आचमन</span>
@@ -26,235 +24,88 @@
           </div>
         </div>
 
-        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
 
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Primary navigation">
           <a href="index.html" class="nav-link" data-i18n="nav.home"></a>
           <a href="about.html" class="nav-link" data-i18n="nav.about"></a>
           <a href="services.html" class="nav-link" data-i18n="nav.services"></a>
-          <a
-            href="research-innovation.html"
-            class="nav-link"
-            data-i18n="nav.research"
-          ></a>
-          <a
-            href="exam-preparation.html"
-            class="nav-link"
-            data-i18n="nav.examPrep"
-          ></a>
-          <a href="team.html" class="nav-link" data-i18n="nav.team"></a>
+          <a href="exam-preparation.html" class="nav-link" data-i18n="nav.programs"></a>
+          <a href="research-innovation.html" class="nav-link" data-i18n="nav.research"></a>
+          <a href="notices.html" class="nav-link" data-i18n="nav.notices"></a>
+          <a href="gallery.html" class="nav-link" data-i18n="nav.gallery"></a>
           <a href="contact.html" class="nav-link" data-i18n="nav.contact"></a>
         </nav>
 
         <div class="nav-controls">
-          <button class="chip-toggle" data-lang-toggle="en" type="button">
-            EN
-          </button>
-          <button class="chip-toggle" data-lang-toggle="np" type="button">
-            ने
-          </button>
-          <button class="theme-toggle" type="button" aria-label="Toggle theme">
-            🌙
-          </button>
+          <button class="chip-toggle" data-lang-toggle="en" type="button">EN</button>
+          <button class="chip-toggle" data-lang-toggle="np" type="button">ने</button>
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">🌙</button>
         </div>
       </div>
     </header>
 
-    <!-- MAIN -->
     <main>
       <section class="section">
         <div class="container">
           <div class="section-header section-header-left">
-            <h1 class="section-title" data-i18n="team.title"></h1>
-            <p class="section-subtitle section-subtitle-narrow" data-i18n="team.sub"></p>
+            <h1 class="section-title" data-team="title"></h1>
+            <p class="section-subtitle section-subtitle-narrow" data-team="subtitle"></p>
           </div>
-
-          <!-- Core Team -->
-          <section class="section" style="padding-top: 0;">
-            <h2 class="section-title">Core Team</h2>
-            <div class="team-grid" style="margin-top: 1rem;">
-              <article class="team-card">
-                <h3 class="team-name">Atma Ram Bhattarai</h3>
-                <div class="team-role">
-                  Executive Director / Lead Researcher
-                </div>
-                <div class="team-qual">
-                  MPhil in Education / PhD Scholar
-                </div>
-                <div class="team-contact">
-                  <a class="btn btn-outline" href="tel:9848023682">Call</a>
-                  <a
-                    class="btn btn-outline"
-                    href="mailto:arcbhattarai11@gmail.com"
-                    >Email</a
-                  >
-                </div>
-              </article>
-
-              <article class="team-card">
-                <h3 class="team-name">Girman Thapa</h3>
-                <div class="team-role">
-                  Lead – Professional Development Support / Researcher
-                </div>
-                <div class="team-qual">MPhil in Education</div>
-                <div class="team-contact">
-                  <a class="btn btn-outline" href="tel:9848023682">Call</a>
-                  <a
-                    class="btn btn-outline"
-                    href="mailto:arcbhattarai11@gmail.com"
-                    >Email</a
-                  >
-                </div>
-              </article>
-
-              <article class="team-card">
-                <h3 class="team-name">Pitambar Acharya</h3>
-                <div class="team-role">Researcher</div>
-                <div class="team-qual">MPhil in Population Studies</div>
-                <div class="team-contact">
-                  <a class="btn btn-outline" href="tel:9848023682">Call</a>
-                  <a
-                    class="btn btn-outline"
-                    href="mailto:arcbhattarai11@gmail.com"
-                    >Email</a
-                  >
-                </div>
-              </article>
-
-              <article class="team-card">
-                <h3 class="team-name">Jitlal Dhakal</h3>
-                <div class="team-role">Inclusion Expert</div>
-                <div class="team-qual">MSW</div>
-                <div class="team-contact">
-                  <a class="btn btn-outline" href="tel:9848023682">Call</a>
-                  <a
-                    class="btn btn-outline"
-                    href="mailto:arcbhattarai11@gmail.com"
-                    >Email</a
-                  >
-                </div>
-              </article>
-
-              <article class="team-card">
-                <h3 class="team-name">Sushila Pokharel</h3>
-                <div class="team-role">Public Health Practitioner</div>
-                <div class="team-qual">BPH / MPH Student</div>
-                <div class="team-contact">
-                  <a class="btn btn-outline" href="tel:9848023682">Call</a>
-                  <a
-                    class="btn btn-outline"
-                    href="mailto:arcbhattarai11@gmail.com"
-                    >Email</a
-                  >
-                </div>
-              </article>
-
-              <article class="team-card">
-                <h3 class="team-name">Archana Bhattarai</h3>
-                <div class="team-role">IT Practitioner</div>
-                <div class="team-qual">BE – Computer Engineering</div>
-                <div class="team-contact">
-                  <a class="btn btn-outline" href="tel:9848023682">Call</a>
-                  <a
-                    class="btn btn-outline"
-                    href="mailto:arcbhattarai11@gmail.com"
-                    >Email</a
-                  >
-                </div>
-              </article>
-            </div>
+          <section class="section section-compact">
+            <h2 class="section-title" data-team="coreTitle">Core Team</h2>
+            <div class="team-grid" data-team-core></div>
           </section>
-
-          <!-- Advisors -->
-          <section class="section" style="padding-top: 1.8rem;">
-            <h2 class="section-title">Advisors</h2>
-            <div class="team-grid" style="margin-top: 1rem;">
-              <article class="team-card">
-                <h3 class="team-name">Dr. Bhojraj Sharma Kafle</h3>
-                <div class="team-role">
-                  Advisor / Quantitative Research Expert
-                </div>
-                <div class="team-qual">PhD</div>
-                <div class="team-contact">
-                  <a class="btn btn-outline" href="tel:9848023682">Call</a>
-                  <a
-                    class="btn btn-outline"
-                    href="mailto:arcbhattarai11@gmail.com"
-                    >Email</a
-                  >
-                </div>
-              </article>
-
-              <article class="team-card">
-                <h3 class="team-name">Dr. Divya Dawadi</h3>
-                <div class="team-role">Advisor – Inclusive Education</div>
-                <div class="team-qual">PhD</div>
-                <div class="team-contact">
-                  <a class="btn btn-outline" href="tel:9848023682">Call</a>
-                  <a
-                    class="btn btn-outline"
-                    href="mailto:arcbhattarai11@gmail.com"
-                    >Email</a
-                  >
-                </div>
-              </article>
-            </div>
+          <section class="section section-compact">
+            <h2 class="section-title" data-team="advisorsTitle">Advisors</h2>
+            <div class="team-grid" data-team-advisors></div>
           </section>
         </div>
       </section>
     </main>
 
-    <!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container footer-inner">
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-col footer-left">
+          <h3 class="footer-brand">Achaman Creative Solutions Pvt. Ltd.</h3>
+          <p class="footer-tagline">Education Development • Research • Training</p>
 
-    <!-- LEFT COLUMN -->
-    <div class="footer-col footer-left">
-      <h3 class="footer-brand">Achaman Creative Solutions Pvt. Ltd.</h3>
-      <p class="footer-tagline">Research • Innovation • Pedagogy</p>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-envelope"></i> <span data-site-email>arcbhattarai11@gmail.com</span></li>
+            <li><i class="fa-solid fa-phone"></i> <span data-site-phone>+977 9848023682</span></li>
+            <li><i class="fa-solid fa-location-dot"></i> <span data-site-location>Kathmandu, Nepal</span></li>
+          </ul>
+        </div>
 
-      <ul class="footer-contact">
-        <li><i class="fa-solid fa-envelope"></i> arcbhattarai11@gmail.com</li>
-        <li><i class="fa-solid fa-phone"></i> +977 9848023682</li>
-        <li><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal</li>
-      </ul>
-    </div>
+        <div class="footer-col footer-links">
+          <h4>Quick Links</h4>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="services.html" data-i18n="nav.services">Services</a>
+          <a href="exam-preparation.html" data-i18n="nav.programs">Programs</a>
+          <a href="research-innovation.html" data-i18n="nav.research">Research & Proposals</a>
+          <a href="notices.html" data-i18n="nav.notices">Notices</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </div>
 
-    <!-- MIDDLE COLUMN -->
-    <div class="footer-col footer-links">
-      <h4>Quick Links</h4>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="research-innovation.html">Research & Innovation</a>
-      <a href="exam-preparation.html">Exam Preparation</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="footer-col footer-right">
-      <h4>Connect with us</h4>
-      <div class="footer-social-icons">
-        <a href="#" class="footer-icon-btn fb-btn"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://wa.me/9848023682" class="footer-icon-btn wa-btn"><i class="fa-brands fa-whatsapp"></i></a>
+        <div class="footer-col footer-right">
+          <h4>Connect with us</h4>
+          <div class="footer-social-icons">
+            <a href="#" class="footer-icon-btn fb-btn" data-fb-link aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/9848023682" class="footer-icon-btn wa-btn" data-whatsapp-link aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
       </div>
-    </div>
 
-  </div>
+      <div class="footer-bottom">© 2026 Achaman Creative Solutions. All rights reserved.</div>
+    </footer>
 
-  <div class="footer-bottom">
-    © 2025 Achaman Creative Solutions. All rights reserved.
-  </div>
-</footer>
-
-
-    <!-- WhatsApp FAB -->
     <button class="whatsapp-fab" aria-label="Chat on WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</button>
-
+      <i class="fa-brands fa-whatsapp"></i>
+    </button>
 
     <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/content.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
