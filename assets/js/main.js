@@ -1,15 +1,14 @@
 // assets/js/main.js
 
-// ---------- CONFIG (dummy for now; you will change later) ----------
+// ---------- CONFIG (public contact links only) ----------
 const WHATSAPP_NUMBER = "9848023682";
-const COMPANY_EMAIL = "arcbhattarai11@gmail.com";
-const FACEBOOK_URL = "https://facebook.com"; // change later to your real page
+const FACEBOOK_URL = "https://facebook.com";
+let currentLanguage = "en";
 
 // ---------- THEME ----------
 function applyTheme(theme) {
   document.body.classList.remove("theme-light", "theme-dark");
   document.body.classList.add(theme === "dark" ? "theme-dark" : "theme-light");
-  localStorage.setItem("theme", theme);
 
   const toggle = document.querySelector(".theme-toggle");
   if (toggle) {
@@ -22,12 +21,10 @@ function applyTheme(theme) {
 }
 
 function initTheme() {
-  const saved = localStorage.getItem("theme");
   const prefersDark =
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const theme = saved || (prefersDark ? "dark" : "light");
-  applyTheme(theme);
+  applyTheme(prefersDark ? "dark" : "light");
 
   const toggle = document.querySelector(".theme-toggle");
   if (toggle) {
@@ -43,7 +40,7 @@ function initTheme() {
 // ---------- LANGUAGE ----------
 function applyLanguage(lang) {
   const langKey = lang === "np" ? "np" : "en";
-  localStorage.setItem("lang", langKey);
+  currentLanguage = langKey;
   document.documentElement.setAttribute("lang", langKey === "np" ? "ne" : "en");
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -61,8 +58,7 @@ function applyLanguage(lang) {
 }
 
 function initLanguage() {
-  const saved = localStorage.getItem("lang") || "en";
-  applyLanguage(saved);
+  applyLanguage("en");
 
   document.querySelectorAll("[data-lang-toggle]").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -101,7 +97,8 @@ function initNavbar() {
   const navLinks = document.querySelector(".nav-links");
   if (toggle && navLinks) {
     toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
+      const isOpen = navLinks.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
     });
   }
 }
@@ -125,11 +122,9 @@ function initContactForm() {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    // later: send to backend/email service here
     if (alertBox) {
-      const lang = localStorage.getItem("lang") || "en";
       alertBox.textContent =
-        translations[lang]["contact.form.success"] || "Message received.";
+        translations[currentLanguage]["contact.form.success"] || "Message received.";
       alertBox.classList.add("alert-success");
       alertBox.style.display = "block";
     }
