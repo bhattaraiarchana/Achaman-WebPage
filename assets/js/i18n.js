@@ -15,12 +15,12 @@ const translations = {
     // Home
     "home.badge": "Education-development and academic support",
     "home.heroTitle":
-      "Strengthening education through teacher training, research, proposal writing, and collaborative learning programs across Nepal.",
+      "Strengthening education development in Nepal through training, research and collaboration.",
     "home.heroSubtitle":
-      "Achaman Creative Solutions partners with local governments, NGOs, INGOs, schools, teachers, researchers, and education stakeholders to design and deliver practical education-development programs.",
-    "home.cta.programs": "Explore Programs",
-    "home.cta.collab": "Request Collaboration",
-    "home.cta.notices": "View Latest Notices",
+      "Achaman Creative Solutions supports teacher training, research, proposal writing, documentation and collaborative learning programs with NGOs, INGOs, local governments, schools, teachers, researchers and education stakeholders.",
+    "home.cta.programs": "View our programs",
+    "home.cta.collab": "Get in touch",
+    "home.cta.notices": "Latest notices",
     "home.notice.title": "Important Notice",
     "home.notice.text":
       "Upcoming teacher training, proposal-writing support and collaborative program announcements will be published here.",
