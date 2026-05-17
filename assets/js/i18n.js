@@ -6,141 +6,111 @@ const translations = {
     "nav.home": "Home",
     "nav.about": "About",
     "nav.services": "Services",
-    "nav.research": "Research & Innovation",
-    "nav.examPrep": "Exam Preparation",
-    "nav.loksewa": "Loksewa",
-    "nav.sikshak": "Sikshak Sewa",
-    "nav.team": "Team",
+    "nav.programs": "Programs",
+    "nav.research": "Research & Proposals",
+    "nav.notices": "Notices",
+    "nav.gallery": "Gallery",
     "nav.contact": "Contact",
 
     // Home
-    "home.badge": "Education • Research • Consultancy",
+    "home.badge": "Education-development and academic support",
     "home.heroTitle":
-      "Advancing research, innovation and pedagogical excellence.",
+      "Strengthening education through teacher training, research, proposal writing, and collaborative learning programs across Nepal.",
     "home.heroSubtitle":
-      "Achaman Creative Solutions bridges academic rigor and practical implementation through research, consultancy and exam-focused preparation classes.",
-    "home.btnServices": "Explore services",
-    "home.btnClasses": "Exam preparation classes",
-    "home.stat1": "Years of experience",
-    "home.stat2": "Completed collaborations",
-    "home.stat3": "Education-focused services",
-    "home.cardTitle":
-      "Research-driven solutions for schools, universities and development partners.",
-    "home.cardText":
-      "From project design and evaluation to capacity building and technology integration, we support institutions to design evidence-based programs.",
-    "home.sectionWhy": "Why Achaman?",
-    "home.sectionWhySub":
-      "An academic space grounded in research, innovation and classroom realities.",
-    "home.why1.title": "Research-informed",
-    "home.why1.text":
-      "We design and implement studies, evaluations and documentation that speak to real policy and classroom needs.",
-    "home.why2.title": "Innovation & pedagogy",
-    "home.why2.text":
-      "We experiment with pedagogical approaches, digital tools and assessment practices that work for Nepali learners.",
-    "home.why3.title": "Guidance for aspirants",
-    "home.why3.text":
-      "Structured preparation support for Loksewa and Sikshak Sewa aspirants with a focus on concept clarity and practice.",
+      "Achaman Creative Solutions partners with local governments, NGOs, INGOs, schools, teachers, researchers, and education stakeholders to design and deliver practical education-development programs.",
+    "home.cta.programs": "Explore Programs",
+    "home.cta.collab": "Request Collaboration",
+    "home.cta.notices": "View Latest Notices",
+    "home.notice.title": "Important Notice",
+    "home.notice.text":
+      "Upcoming teacher training, proposal-writing support and collaborative program announcements will be published here.",
+    "home.work.title": "Who We Work With",
+    "home.work.sub":
+      "Achaman works with institutions and learners committed to practical education improvement.",
+    "home.work.ngo.title": "NGOs / INGOs",
+    "home.work.ngo.text": "Program design, training delivery, field documentation and education-development support.",
+    "home.work.local.title": "Gaupalikas / Municipalities",
+    "home.work.local.text": "Local education plans, teacher capacity building and school-support programs.",
+    "home.work.schools.title": "Schools",
+    "home.work.schools.text": "Workshops, classroom improvement initiatives and academic support activities.",
+    "home.work.teachers.title": "Teachers",
+    "home.work.teachers.text": "Professional development, pedagogy, assessment and reflective teaching practice.",
+    "home.work.researchers.title": "Researchers",
+    "home.work.researchers.text": "Research design, tools, documentation, reporting and academic collaboration.",
+    "home.work.students.title": "Students / Shikshak Sewa candidates",
+    "home.work.students.text": "Learner-focused academic support and preparation as one sub-program.",
+    "home.services.title": "Core Services",
+    "home.services.sub":
+      "Focused support for education-development programs, academic work and collaborative implementation.",
+    "home.service.training.title": "Teacher Training & Capacity Building",
+    "home.service.training.text": "Practical training for teachers, school leaders and education facilitators.",
+    "home.service.research.title": "Research Support",
+    "home.service.research.text": "Study design, tools, data collection support, analysis assistance and reporting.",
+    "home.service.proposal.title": "Proposal Writing & Documentation",
+    "home.service.proposal.text": "Concept notes, project proposals, program documentation and learning reports.",
+    "home.service.design.title": "Educational Program Design",
+    "home.service.design.text": "Collaborative design of training, school-support and education-development programs.",
+    "home.service.workshops.title": "Workshops & Academic Programs",
+    "home.service.workshops.text": "Short courses, seminars, workshops and academic-support sessions.",
+    "home.service.shikshak.title": "Shikshak Sewa Aayog Preparation",
+    "home.service.shikshak.text": "Learner-focused preparation support as a sub-program, not the main identity of Achaman.",
+    "home.process.title": "Collaboration Process",
+    "home.process.sub": "A clear process from initial discussion to implementation, documentation and follow-up.",
+    "home.process.1.title": "Need assessment / discussion",
+    "home.process.1.text": "We begin with a practical conversation about needs, context and expected outcomes.",
+    "home.process.2.title": "Program or proposal design",
+    "home.process.2.text": "A suitable training, research or proposal framework is prepared with partners.",
+    "home.process.3.title": "Training/research implementation",
+    "home.process.3.text": "Activities are delivered through field-sensitive and learner-centered methods.",
+    "home.process.4.title": "Documentation and reporting",
+    "home.process.4.text": "Outputs, learning and recommendations are documented for institutional use.",
+    "home.process.5.title": "Follow-up support",
+    "home.process.5.text": "Follow-up conversations help partners continue improvement after the program.",
+    "home.featured.title": "Featured Programs",
+    "home.featured.sub": "Public placeholders for upcoming collaborative programs.",
+    "home.featured.1.title": "Teacher professional development series",
+    "home.featured.1.text": "Placeholder for upcoming training programs with schools and local governments.",
+    "home.featured.2.title": "Proposal writing clinic",
+    "home.featured.2.text": "Placeholder for practical proposal support sessions for education partners.",
+    "home.featured.3.title": "Research and documentation support",
+    "home.featured.3.text": "Placeholder for collaborative research, reporting and documentation work.",
+    "home.gallery.title": "Gallery Preview",
+    "home.gallery.sub": "Photos from trainings, workshops and field-based learning activities will appear here.",
+    "home.gallery.placeholder": "Image placeholder",
+    "home.notices.title": "Latest Notices",
+    "home.notices.sub": "Program updates and announcements for partners and learners.",
+    "home.contact.title": "Plan a collaboration with Achaman",
+    "home.contact.text":
+      "NGOs, INGOs, municipalities, gaupalikas, schools and education stakeholders can contact us to discuss training, research, proposal-writing and learning programs.",
 
-    // About
+    // Shared pages
     "about.title": "About Achaman Creative Solutions",
     "about.intro":
-      "Achaman Creative Solutions Pvt. Ltd. is an education-focused research, consulting and training organization based in Nepal.",
+      "Achaman Creative Solutions Pvt. Ltd. is an education-development and academic-support organization based in Nepal.",
     "about.missionTitle": "Mission",
     "about.missionText":
-      "To contribute to a progressive educational ecosystem through research, evidence-based consultancy, and creative learning solutions.",
+      "To support stronger education systems through teacher training, research, proposal writing, documentation and collaborative learning programs.",
     "about.objectivesTitle": "Core objectives",
-    "about.obj1":
-      "Design and implement education and development-related research and evaluations.",
-    "about.obj2":
-      "Support institutions in policy formulation, program design and governance strengthening.",
-    "about.obj3":
-      "Offer capacity development and professional learning opportunities for teachers and education professionals.",
-    "about.obj4":
-      "Provide structured exam preparation and academic support for aspiring education professionals.",
-
-    // Services
+    "about.obj1": "Design and facilitate teacher training and capacity-building programs.",
+    "about.obj2": "Collaborate with NGOs, INGOs, local governments, schools and education stakeholders.",
+    "about.obj3": "Support research, proposal writing, documentation and academic programs.",
+    "about.obj4": "Provide learner-focused Shikshak Sewa Aayog preparation as a sub-program.",
     "services.title": "Services",
-    "services.sub":
-      "Integrated services that combine research, pedagogy, innovation and capacity development.",
-    "services.1.title": "Research & evaluation",
-    "services.1.text":
-      "Designing and executing research, baseline–endline surveys, evaluations and documentation for education and development programs.",
-    "services.2.title": "Project & proposal design",
-    "services.2.text":
-      "Supporting organizations to conceptualize, design and write contextually grounded, evidence-based project proposals.",
-    "services.3.title": "Policy & governance support",
-    "services.3.text":
-      "Technical support for policy formulation, institutional development and governance strengthening in the education sector.",
-    "services.4.title": "Capacity building & training",
-    "services.4.text":
-      "Designing and facilitating workshops, teacher professional development, and leadership programs.",
-    "services.5.title": "Innovation & technology",
-    "services.5.text":
-      "Exploring and integrating digital tools, learning platforms and innovative pedagogies in teaching-learning.",
-    "services.6.title": "Exam preparation programs",
-    "services.6.text":
-      "Structured preparation support for Loksewa and Sikshak Sewa aspirants, combining content, strategy and practice.",
-
-    // Research & Innovation
-    "research.title": "Research & Innovation",
-    "research.sub":
-      "From classroom to policy – connecting research, practice and innovation.",
-    "research.block1.title": "Research & studies",
-    "research.block1.text":
-      "Achaman and its team members have engaged in diverse education and development-focused research, including needs assessments, baseline studies and program evaluations.",
-    "research.block2.title": "Innovation spaces",
-    "research.block2.text":
-      "We create spaces where teachers, students and institutions can experiment with new pedagogical ideas, tools and assessment practices.",
-    "research.block3.title": "Partnerships",
-    "research.block3.text":
-      "We collaborate with academic institutions, NGOs and education stakeholders to co-create contextually relevant knowledge.",
-
-    // Exam – Loksewa
-    "exam.lok.title": "Loksewa Preparation Classes",
-    "exam.lok.sub":
-      "Structured support for Loksewa aspirants with a focus on clarity, discipline and guided practice.",
-    "exam.lok.sectionOverview": "Program overview",
-    "exam.lok.sectionFeatures": "Key features",
-    "exam.lok.sectionBatches": "Sample batch structure",
-    "exam.lok.overview":
-      "Achaman plans to run dedicated Loksewa preparation classes with a balance of core content, exam strategy and regular practice tests.",
-    "exam.lok.f1": "Concept-oriented teaching with clear explanations.",
-    "exam.lok.f2": "Regular practice tests and feedback.",
-    "exam.lok.f3": "Study planning and guidance for self-study.",
-    "exam.lok.f4": "Small-group environment for interaction.",
-    "exam.lok.b1": "Orientation + diagnostic test.",
-    "exam.lok.b2": "Content coverage classes.",
-    "exam.lok.b3": "Revision + model tests.",
-    "exam.lok.b4": "Final mock exams & guidance.",
-
-    // Exam – Sikshak
-    "exam.sik.title": "Sikshak Sewa Preparation Classes",
-    "exam.sik.sub":
-      "Preparation support for aspiring teachers with a strong foundation in pedagogy and content.",
-    "exam.sik.sectionOverview": "Program overview",
-    "exam.sik.sectionFeatures": "Key features",
-    "exam.sik.sectionBatches": "Sample focus areas",
-    "exam.sik.overview":
-      "Sikshak Sewa preparation at Achaman will emphasize both exam requirements and the deeper understanding of teaching-learning processes.",
-    "exam.sik.f1":
-      "Coverage of syllabus with focus on pedagogy and classroom practice.",
-    "exam.sik.f2": "Discussion on policy documents and education frameworks.",
-    "exam.sik.f3": "Model questions and answer writing practice.",
-    "exam.sik.f4": "Guidance on long-term professional growth as a teacher.",
-    "exam.sik.b1": "Content knowledge and subject foundations.",
-    "exam.sik.b2": "Pedagogical principles and methods.",
-    "exam.sik.b3": "Assessment and classroom management.",
-    "exam.sik.b4": "Mock tests and interview guidance.",
-
-    // Team
+    "services.sub": "Practical services for education development, institutional collaboration and academic support.",
+    "programs.title": "Programs",
+    "programs.sub": "Collaborative education-development programs and learner-focused academic support.",
+    "research.title": "Research & Proposals",
+    "research.sub": "Support for research design, field-based studies, proposal writing, documentation and reporting.",
+    "notices.title": "Notices",
+    "notices.sub": "Public announcements for programs, trainings and collaboration opportunities.",
+    "gallery.title": "Gallery",
+    "gallery.sub": "A public gallery for trainings, workshops and collaborative learning activities.",
     "team.title": "Team",
-    "team.sub":
-      "A growing academic and professional community committed to thoughtful educational practice.",
+    "team.sub": "Academic and education-development professionals supporting Achaman programs.",
 
     // Contact
     "contact.title": "Contact",
-    "contact.sub":
-      "Reach out for research collaboration, consultancy or exam preparation inquiries.",
+    "contact.sub": "Request collaboration for teacher training, research, proposal writing or academic programs.",
     "contact.form.success": "Thank you. Your message has been recorded.",
     "contact.form.name": "Full name",
     "contact.form.email": "Email",
@@ -150,19 +120,15 @@ const translations = {
     "contact.form.type": "Type of inquiry",
     "contact.form.type.general": "General Inquiry",
     "contact.form.type.research": "Research & Consultancy",
-    "contact.form.type.loksewa": "Loksewa Preparation",
-    "contact.form.type.sikshak": "Sikshak Sewa Preparation",
+    "contact.form.type.training": "Teacher Training / Program Collaboration",
+    "contact.form.type.sikshak": "Shikshak Sewa Preparation",
     "contact.form.submit": "Send message",
     "contact.info.title": "Organization details",
     "contact.info.address":
-      "Kathmandu, Nepal (exact address can be updated here).",
+      "Kathmandu, Nepal. Collaboration programs can be designed for local governments, schools and education partners across Nepal.",
     "contact.info.email": "Email",
     "contact.info.phone": "Phone",
-
-    // Footer
-    "footer.copy": "Achaman Creative Solutions Pvt. Ltd.",
-    "footer.tagline": "Research • Innovation • Pedagogy",
-    "footer.social": "Connect with us"
+    "contact.info.note": "You can also reach us via the WhatsApp button on the bottom right."
   },
 
   np: {
@@ -170,142 +136,104 @@ const translations = {
     "nav.home": "गृहपृष्ठ",
     "nav.about": "परिचय",
     "nav.services": "सेवाहरू",
-    "nav.research": "अनुसन्धान र नवप्रवर्तन",
-    "nav.examPrep": "तयारी कक्षा",
-    "nav.loksewa": "लोक सेवा",
-    "nav.sikshak": "शिक्षक सेवा",
-    "nav.team": "टिम",
+    "nav.programs": "कार्यक्रमहरू",
+    "nav.research": "अनुसन्धान र प्रस्तावहरू",
+    "nav.notices": "सूचनाहरू",
+    "nav.gallery": "ग्यालरी",
     "nav.contact": "सम्पर्क",
 
     // Home
-    "home.badge": "शिक्षा • अनुसन्धान • परामर्श",
-    "home.heroTitle":
-      "अनुसन्धान, नवप्रवर्तन र शैक्षिक उत्कृष्टतामा समर्पित संस्था।",
-    "home.heroSubtitle":
-      "आचमन क्रियटिभ सोलुसन्सले अनुसन्धान, परामर्श र तयारी कक्षामार्फत शैक्षिक क्षेत्रमा ज्ञान र व्यवहारबीचको दूरी घटाउने लक्ष्य राखेको छ।",
-    "home.btnServices": "सेवाहरू हेर्नुहोस्",
-    "home.btnClasses": "तयारी कक्षामा जानुहोस्",
-    "home.stat1": "वर्षको अनुभव",
-    "home.stat2": "लगानी/सहकार्यहरू",
-    "home.stat3": "शिक्षा केन्द्रित सेवाहरू",
-    "home.cardTitle":
-      "विद्यालय, कलेज, विश्वविद्यालय र विकास साझेदारका लागि अनुसन्धान आधारित सेवा।",
-    "home.cardText":
-      "आफ्नो परियोजना र कार्यक्रमलाई प्रमाणमा आधारित बनाउन चाहने संस्थाहरूका लागि डिजाइन, अनुसन्धान, मूल्याङ्कन र तालिमसम्बन्धी सहयोग।",
-    "home.sectionWhy": "किन आचमन?",
-    "home.sectionWhySub":
-      "अनुसन्धान र कक्षाकोठाको अनुभवबाट जोडिएको शैक्षिक अभ्यासको साझा थलो।",
-    "home.why1.title": "अनुसन्धानमा आधारित",
-    "home.why1.text":
-      "नीति र कक्षाकोठा दुबैलाई सम्बोधन गर्ने अध्ययन, मूल्याङ्कन र दस्तावेजीकरण।",
-    "home.why2.title": "नवप्रवर्तन र शिक्षण विधि",
-    "home.why2.text":
-      "शिक्षण–शिकाइ प्रक्रिया, डिजिटल उपकरण र मूल्याङ्कनका नयाँ अभ्यासमा प्रयोग।",
-    "home.why3.title": "अभ्यर्थीका लागि सहजीकरण",
-    "home.why3.text":
-      "लोक सेवा र शिक्षक सेवा अभ्यर्थीलाई सुदृढ योजना, अवधारणा स्पष्टता र अभ्यासमा ध्यान।",
+    "home.badge": "शिक्षा विकास र शैक्षिक सहयोग",
+    "home.heroTitle": "नेपालभर शिक्षक तालिम, अनुसन्धान, प्रस्ताव लेखन र सहकार्यमा आधारित सिकाइ कार्यक्रममार्फत शिक्षा सुदृढीकरण।",
+    "home.heroSubtitle": "आचमन क्रियटिभ सोलुसन्सले स्थानीय सरकार, गैरसरकारी संस्था, अन्तर्राष्ट्रिय गैरसरकारी संस्था, विद्यालय, शिक्षक, अनुसन्धानकर्ता र शिक्षा सरोकारवालासँग व्यवहारिक शिक्षा-विकास कार्यक्रम डिजाइन र सञ्चालनमा सहकार्य गर्छ।",
+    "home.cta.programs": "कार्यक्रमहरू हेर्नुहोस्",
+    "home.cta.collab": "सहकार्य अनुरोध गर्नुहोस्",
+    "home.cta.notices": "नवीनतम सूचना हेर्नुहोस्",
+    "home.notice.title": "महत्त्वपूर्ण सूचना",
+    "home.notice.text": "आगामी शिक्षक तालिम, प्रस्ताव लेखन सहयोग र सहकार्य कार्यक्रमसम्बन्धी सूचना यहाँ प्रकाशित गरिनेछ।",
+    "home.work.title": "हामी कोसँग सहकार्य गर्छौं",
+    "home.work.sub": "आचमन व्यवहारिक शिक्षा सुधारमा प्रतिबद्ध संस्था र सिकाइ समुदायसँग काम गर्छ।",
+    "home.work.ngo.title": "गैरसरकारी / अन्तर्राष्ट्रिय गैरसरकारी संस्था",
+    "home.work.ngo.text": "कार्यक्रम डिजाइन, तालिम सञ्चालन, क्षेत्रगत दस्तावेजीकरण र शिक्षा-विकास सहयोग।",
+    "home.work.local.title": "गाउँपालिका / नगरपालिका",
+    "home.work.local.text": "स्थानीय शिक्षा योजना, शिक्षक क्षमता विकास र विद्यालय सहयोग कार्यक्रम।",
+    "home.work.schools.title": "विद्यालयहरू",
+    "home.work.schools.text": "कार्यशाला, कक्षाकोठा सुधार पहल र शैक्षिक सहयोग गतिविधि।",
+    "home.work.teachers.title": "शिक्षकहरू",
+    "home.work.teachers.text": "पेशागत विकास, शिक्षण विधि, मूल्याङ्कन र प्रतिविम्बात्मक शिक्षण अभ्यास।",
+    "home.work.researchers.title": "अनुसन्धानकर्ताहरू",
+    "home.work.researchers.text": "अनुसन्धान डिजाइन, उपकरण, दस्तावेजीकरण, प्रतिवेदन र शैक्षिक सहकार्य।",
+    "home.work.students.title": "विद्यार्थी / शिक्षक सेवा अभ्यर्थी",
+    "home.work.students.text": "एक उप-कार्यक्रमका रूपमा सिकाइकर्ता केन्द्रित शैक्षिक सहयोग र तयारी।",
+    "home.services.title": "मुख्य सेवाहरू",
+    "home.services.sub": "शिक्षा-विकास कार्यक्रम, शैक्षिक कार्य र सहकार्यात्मक कार्यान्वयनका लागि केन्द्रित सहयोग।",
+    "home.service.training.title": "शिक्षक तालिम र क्षमता विकास",
+    "home.service.training.text": "शिक्षक, विद्यालय नेतृत्व र शिक्षा सहजकर्ताका लागि व्यवहारिक तालिम।",
+    "home.service.research.title": "अनुसन्धान सहयोग",
+    "home.service.research.text": "अध्ययन डिजाइन, उपकरण, तथ्याङ्क सङ्कलन सहयोग, विश्लेषण सहयोग र प्रतिवेदन।",
+    "home.service.proposal.title": "प्रस्ताव लेखन र दस्तावेजीकरण",
+    "home.service.proposal.text": "अवधारणा पत्र, परियोजना प्रस्ताव, कार्यक्रम दस्तावेजीकरण र सिकाइ प्रतिवेदन।",
+    "home.service.design.title": "शैक्षिक कार्यक्रम डिजाइन",
+    "home.service.design.text": "तालिम, विद्यालय सहयोग र शिक्षा-विकास कार्यक्रमको सहकार्यात्मक डिजाइन।",
+    "home.service.workshops.title": "कार्यशाला र शैक्षिक कार्यक्रम",
+    "home.service.workshops.text": "छोटो पाठ्यक्रम, सेमिनार, कार्यशाला र शैक्षिक सहयोग सत्र।",
+    "home.service.shikshak.title": "शिक्षक सेवा आयोग तयारी",
+    "home.service.shikshak.text": "आचमनको मुख्य पहिचान नभई उप-कार्यक्रमका रूपमा सिकाइकर्ता केन्द्रित तयारी सहयोग।",
+    "home.process.title": "सहकार्य प्रक्रिया",
+    "home.process.sub": "प्रारम्भिक छलफलदेखि कार्यान्वयन, दस्तावेजीकरण र फलोअपसम्म स्पष्ट प्रक्रिया।",
+    "home.process.1.title": "आवश्यकता पहिचान / छलफल",
+    "home.process.1.text": "आवश्यकता, सन्दर्भ र अपेक्षित नतिजाबारे व्यवहारिक छलफलबाट सुरु गर्छौं।",
+    "home.process.2.title": "कार्यक्रम वा प्रस्ताव डिजाइन",
+    "home.process.2.text": "साझेदारसँग मिलेर उपयुक्त तालिम, अनुसन्धान वा प्रस्ताव ढाँचा तयार गरिन्छ।",
+    "home.process.3.title": "तालिम / अनुसन्धान कार्यान्वयन",
+    "home.process.3.text": "गतिविधिहरू क्षेत्र-संवेदनशील र सिकाइकर्ता केन्द्रित विधिबाट सञ्चालन गरिन्छ।",
+    "home.process.4.title": "दस्तावेजीकरण र प्रतिवेदन",
+    "home.process.4.text": "उपलब्धि, सिकाइ र सुझावहरू संस्थागत प्रयोगका लागि दस्तावेजीकरण गरिन्छ।",
+    "home.process.5.title": "फलोअप सहयोग",
+    "home.process.5.text": "कार्यक्रमपछि सुधार निरन्तर राख्न फलोअप छलफलले सहयोग गर्छ।",
+    "home.featured.title": "प्रमुख कार्यक्रमहरू",
+    "home.featured.sub": "आगामी सहकार्य कार्यक्रमका सार्वजनिक स्थानधारकहरू।",
+    "home.featured.1.title": "शिक्षक पेशागत विकास श्रृंखला",
+    "home.featured.1.text": "विद्यालय र स्थानीय सरकारसँग हुने आगामी तालिम कार्यक्रमका लागि स्थानधारक।",
+    "home.featured.2.title": "प्रस्ताव लेखन क्लिनिक",
+    "home.featured.2.text": "शिक्षा साझेदारका लागि व्यवहारिक प्रस्ताव सहयोग सत्रको स्थानधारक।",
+    "home.featured.3.title": "अनुसन्धान र दस्तावेजीकरण सहयोग",
+    "home.featured.3.text": "सहकार्यात्मक अनुसन्धान, प्रतिवेदन र दस्तावेजीकरण कार्यको स्थानधारक।",
+    "home.gallery.title": "ग्यालरी झलक",
+    "home.gallery.sub": "तालिम, कार्यशाला र क्षेत्रगत सिकाइ गतिविधिका तस्बिरहरू यहाँ देखिनेछन्।",
+    "home.gallery.placeholder": "तस्बिर स्थानधारक",
+    "home.notices.title": "नवीनतम सूचनाहरू",
+    "home.notices.sub": "साझेदार र सिकाइकर्ताका लागि कार्यक्रम अपडेट र घोषणा।",
+    "home.contact.title": "आचमनसँग सहकार्य योजना बनाउनुहोस्",
+    "home.contact.text": "गैरसरकारी संस्था, अन्तर्राष्ट्रिय गैरसरकारी संस्था, नगरपालिका, गाउँपालिका, विद्यालय र शिक्षा सरोकारवालाले तालिम, अनुसन्धान, प्रस्ताव लेखन र सिकाइ कार्यक्रमबारे छलफल गर्न हामीलाई सम्पर्क गर्न सक्नुहुन्छ।",
 
-    // About
+    // Shared pages
     "about.title": "आचमन क्रियटिभ सोलुसन्सको परिचय",
-    "about.intro":
-      "आचमन क्रियटिभ सोलुसन्स प्रा. लि. शिक्षा क्षेत्रमा केन्द्रित अनुसन्धान, परामर्श र तालिममा काम गर्ने संस्था हो।",
+    "about.intro": "आचमन क्रियटिभ सोलुसन्स प्रा. लि. नेपालमा आधारित शिक्षा-विकास र शैक्षिक सहयोग संस्था हो।",
     "about.missionTitle": "उद्देश्य",
-    "about.missionText":
-      "अनुसन्धान, प्रमाणमा आधारित परामर्श र सिर्जनात्मक सिकाइ समाधानमार्फत प्रगतिशील शैक्षिक परिवेश निर्माणमा योगदान पुर्‍याउनु।",
+    "about.missionText": "शिक्षक तालिम, अनुसन्धान, प्रस्ताव लेखन, दस्तावेजीकरण र सहकार्यात्मक सिकाइ कार्यक्रममार्फत शिक्षा प्रणालीलाई सुदृढ बनाउन सहयोग गर्नु।",
     "about.objectivesTitle": "मुख्य उद्देश्यहरू",
-    "about.obj1":
-      "शिक्षा तथा विकाससम्बन्धी अध्ययन, अनुसन्धान र मूल्याङ्कन कार्य गर्नु।",
-    "about.obj2":
-      "नीति निर्माण, कार्यक्रम डिजाइन र संस्थागत सशक्तिकरणमा प्राविधिक सहयोग पुर्‍याउनु।",
-    "about.obj3":
-      "शिक्षक तथा शैक्षिक क्रियाशील व्यक्तिका लागि क्षमता विकास कार्यक्रम सञ्चालन गर्नु।",
-    "about.obj4":
-      "शिक्षक सेवा र लोक सेवा तयारी जस्ता शैक्षिक प्रतिस्पर्धात्मक परीक्षाका लागि शैक्षिक सहजीकरण प्रदान गर्नु।",
-
-    // Services
+    "about.obj1": "शिक्षक तालिम र क्षमता विकास कार्यक्रम डिजाइन तथा सहजीकरण गर्नु।",
+    "about.obj2": "गैरसरकारी संस्था, अन्तर्राष्ट्रिय गैरसरकारी संस्था, स्थानीय सरकार, विद्यालय र शिक्षा सरोकारवालासँग सहकार्य गर्नु।",
+    "about.obj3": "अनुसन्धान, प्रस्ताव लेखन, दस्तावेजीकरण र शैक्षिक कार्यक्रममा सहयोग गर्नु।",
+    "about.obj4": "सिकाइकर्ता केन्द्रित शिक्षक सेवा आयोग तयारीलाई उप-कार्यक्रमका रूपमा सञ्चालन गर्नु।",
     "services.title": "सेवाहरू",
-    "services.sub":
-      "अनुसन्धान, शिक्षाशास्त्र, नवप्रवर्तन र क्षमता विकासलाई जोडेर प्रदान गरिने सेवाहरू।",
-    "services.1.title": "अनुसन्धान र मूल्याङ्कन",
-    "services.1.text":
-      "शिक्षा तथा विकासका कार्यक्रमका लागि अध्ययन, सर्वेक्षण, आधाररेखा/अन्तरेखा र मूल्याङ्कन कार्य।",
-    "services.2.title": "परियोजना र प्रस्ताव डिजाइन",
-    "services.2.text":
-      "प्रमाण र सन्दर्भमा आधारित परियोजना अवधारणा र प्रस्ताव लेखनमा सहयोग।",
-    "services.3.title": "नीति र सुशासन सहायता",
-    "services.3.text":
-      "शैक्षिक नीति निर्माण, संस्थागत सुदृढीकरण र सुशासन अभिवृद्धिका लागि परामर्श।",
-    "services.4.title": "क्षमता विकास र तालिम",
-    "services.4.text":
-      "शिक्षक तथा शैक्षिक नेतृत्व विकासलाई लक्षित विभिन्न तालिम र कार्यशाला कार्यक्रम।",
-    "services.5.title": "नवप्रवर्तन र प्रविधि",
-    "services.5.text":
-      "शिक्षण–शिकाइमा डिजिटल प्रविधि र नवप्रवर्तनात्मक अभ्यास पहिचान र प्रयोग।",
-    "services.6.title": "तयारी कार्यक्रमहरू",
-    "services.6.text":
-      "लोक सेवा तथा शिक्षक सेवा अभ्यर्थीका लागि संरचित तयारी कार्यक्रम।",
-
-    // Research
-    "research.title": "अनुसन्धान र नवप्रवर्तन",
-    "research.sub":
-      "कक्षाकोठादेखि नीतिसम्म – अनुसन्धान, व्यवहार र नवप्रवर्तन जोड्ने पहल।",
-    "research.block1.title": "अनुसन्धान र अध्ययन",
-    "research.block1.text":
-      "शिक्षा तथा विकाससम्बन्धी आवश्यकता मूल्याङ्कन, अध्ययन र कार्यक्रम मूल्याङ्कनमा संलग्नता।",
-    "research.block2.title": "नवप्रवर्तनका अभ्यास",
-    "research.block2.text":
-      "शिक्षक, विद्यार्थी र संस्थाले नयाँ विचार र उपकरण प्रयोग गर्न पाउने सिकाइ–थलो निर्माण।",
-    "research.block3.title": "साझेदारी",
-    "research.block3.text":
-      "शैक्षिक संस्था, सङ्गठन र सरोकारवालासँग सहकार्य गर्दै स्थानीय सन्दर्भअनुकूल ज्ञान उत्पादन।",
-
-    // Exam Loksewa
-    "exam.lok.title": "लोक सेवा तयारी कक्षा",
-    "exam.lok.sub":
-      "अवधारणा स्पष्टता, अनुशासन र अभ्यासमा जोड दिइने तयारी कार्यक्रम।",
-    "exam.lok.sectionOverview": "कार्यक्रमको संक्षिप्त विवरण",
-    "exam.lok.sectionFeatures": "मुख्य विशेषताहरू",
-    "exam.lok.sectionBatches": "नमूना ब्याच संरचना",
-    "exam.lok.overview":
-      "आचमनले लोक सेवा अभ्यर्थीका लागि सामग्री, रणनीति र नियमित परीक्षा अभ्यास समेटिएको तयारी कार्यक्रम सञ्चालन गर्ने योजना बनाएको छ।",
-    "exam.lok.f1": "अवधारणामा आधारित कक्षा र स्पष्ट व्याख्या।",
-    "exam.lok.f2": "नियमित अभ्यास परीक्षा र फिडब्याक।",
-    "exam.lok.f3": "स्वअध्ययनका लागि योजना र मार्गदर्शन।",
-    "exam.lok.f4": "साना समूहमा अन्तर्क्रियात्मक कक्षा।",
-    "exam.lok.b1": "ओरिएन्टेसन कक्षा र प्रारम्भिक मूल्याङ्कन।",
-    "exam.lok.b2": "पाठ्य–वस्तुको विस्तृत आवरण।",
-    "exam.lok.b3": "पुनरावृत्ति र नमूना प्रश्न अभ्यास।",
-    "exam.lok.b4": "अन्तिम मोक परीक्षा र परामर्श।",
-
-    // Exam Sikshak
-    "exam.sik.title": "शिक्षक सेवा तयारी कक्षा",
-    "exam.sik.sub":
-      "अभ्यर्थीको शैक्षिक दृष्टिकोण र परीक्षात्मक तयारिमा एकै साथ ध्यान।",
-    "exam.sik.sectionOverview": "कार्यक्रमको संक्षिप्त विवरण",
-    "exam.sik.sectionFeatures": "मुख्य विशेषताहरू",
-    "exam.sik.sectionBatches": "नमूना फोकस क्षेत्रहरू",
-    "exam.sik.overview":
-      "शिक्षक सेवा तयारी कार्यक्रमले परीक्षाको आवश्यकता मात्र होइन, शिक्षण–शिकाइ प्रक्रियाको गहिरो बुझाइमा पनि जोड दिन्छ।",
-    "exam.sik.f1":
-      "पाठ्यक्रम अनुसार विषयवस्तु र शिक्षण–शिकाइ दुवै पक्षमा जोड।",
-    "exam.sik.f2": "नीति र शैक्षिक दस्तावेजमा आधारित छलफल।",
-    "exam.sik.f3": "नमूना प्रश्न र उत्तर लेखन अभ्यास।",
-    "exam.sik.f4": "दीर्घकालीन पेशागत विकासमा मार्गदर्शन।",
-    "exam.sik.b1": "विषयगत ज्ञान र आधारभूत अवधारणा।",
-    "exam.sik.b2": "शिक्षण सिद्धान्त र विधिहरू।",
-    "exam.sik.b3": "मूल्याङ्कन र कक्षा व्यवस्थापन।",
-    "exam.sik.b4": "मोक परीक्षा र इन्टरभ्यु तयारी।",
-
-    // Team
-    "team.title": "सम्पर्क व्यक्ति र टिम",
-    "team.sub":
-      "अनुसन्धान, प्रशिक्षण र तयारी कार्यक्रममा संलग्न शैक्षिक टिम।",
+    "services.sub": "शिक्षा विकास, संस्थागत सहकार्य र शैक्षिक सहयोगका लागि व्यवहारिक सेवाहरू।",
+    "programs.title": "कार्यक्रमहरू",
+    "programs.sub": "सहकार्यात्मक शिक्षा-विकास कार्यक्रम र सिकाइकर्ता केन्द्रित शैक्षिक सहयोग।",
+    "research.title": "अनुसन्धान र प्रस्तावहरू",
+    "research.sub": "अनुसन्धान डिजाइन, क्षेत्रगत अध्ययन, प्रस्ताव लेखन, दस्तावेजीकरण र प्रतिवेदनका लागि सहयोग।",
+    "notices.title": "सूचनाहरू",
+    "notices.sub": "कार्यक्रम, तालिम र सहकार्य अवसरसम्बन्धी सार्वजनिक सूचनाहरू।",
+    "gallery.title": "ग्यालरी",
+    "gallery.sub": "तालिम, कार्यशाला र सहकार्यात्मक सिकाइ गतिविधिका लागि सार्वजनिक ग्यालरी।",
+    "team.title": "टिम",
+    "team.sub": "आचमनका कार्यक्रमलाई सहयोग गर्ने शैक्षिक तथा शिक्षा-विकास पेशाकर्मीहरू।",
 
     // Contact
     "contact.title": "सम्पर्क",
-    "contact.sub":
-      "अनुसन्धान, परामर्श तथा तयारी कक्षासम्बन्धी जानकारीका लागि सम्पर्क गर्नुहोस्।",
-    "contact.form.success": "धन्यवाद, तपाईंको सन्देश सुरक्षित गरियो।",
+    "contact.sub": "शिक्षक तालिम, अनुसन्धान, प्रस्ताव लेखन वा शैक्षिक कार्यक्रमका लागि सहकार्य अनुरोध गर्नुहोस्।",
+    "contact.form.success": "धन्यवाद, तपाईंको सन्देश प्राप्त भयो।",
     "contact.form.name": "पूरा नाम",
     "contact.form.email": "इमेल",
     "contact.form.phone": "फोन",
@@ -314,18 +242,13 @@ const translations = {
     "contact.form.type": "सन्देशको प्रकार",
     "contact.form.type.general": "सामान्य जानकारी",
     "contact.form.type.research": "अनुसन्धान तथा परामर्श",
-    "contact.form.type.loksewa": "लोक सेवा तयारी",
+    "contact.form.type.training": "शिक्षक तालिम / कार्यक्रम सहकार्य",
     "contact.form.type.sikshak": "शिक्षक सेवा तयारी",
     "contact.form.submit": "सन्देश पठाउनुहोस्",
     "contact.info.title": "संस्थागत विवरण",
-    "contact.info.address":
-      "काठमाडौं, नेपाल (ठ्याक्कै ठेगाना यहाँ अद्यावधिक गर्न सकिन्छ)।",
+    "contact.info.address": "काठमाडौं, नेपाल। स्थानीय सरकार, विद्यालय र शिक्षा साझेदारका लागि नेपालभर सहकार्य कार्यक्रम डिजाइन गर्न सकिन्छ।",
     "contact.info.email": "इमेल",
     "contact.info.phone": "फोन",
-
-    // Footer
-    "footer.copy": "आचमन क्रियटिभ सोलुसन्स प्रा. लि.",
-    "footer.tagline": "अनुसन्धान • नवप्रवर्तन • शिक्षाशास्त्र",
-    "footer.social": "हामीसँग जडिनुहोस्"
+    "contact.info.note": "तल दायाँपट्टिको WhatsApp बटनबाट पनि सम्पर्क गर्न सक्नुहुन्छ।"
   }
 };

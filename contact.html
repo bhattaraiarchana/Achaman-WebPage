@@ -6,16 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="theme-light">
-    <!-- HEADER -->
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("achamanTheme");
+          if (savedTheme === "dark") {
+            document.body.classList.remove("theme-light");
+            document.body.classList.add("theme-dark");
+            document.documentElement.classList.add("theme-dark");
+          }
+        } catch (error) {
+          // Keep the default light theme if browser preference storage is unavailable.
+        }
+      })();
+    </script>
     <header class="navbar">
       <div class="container nav-inner">
         <div class="brand">
@@ -26,214 +38,64 @@
           </div>
         </div>
 
-        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
 
         <nav class="nav-links">
           <a href="index.html" class="nav-link" data-i18n="nav.home"></a>
           <a href="about.html" class="nav-link" data-i18n="nav.about"></a>
           <a href="services.html" class="nav-link" data-i18n="nav.services"></a>
-          <a
-            href="research-innovation.html"
-            class="nav-link"
-            data-i18n="nav.research"
-          ></a>
-          <a
-            href="exam-preparation.html"
-            class="nav-link"
-            data-i18n="nav.examPrep"
-          ></a>
-          <a href="team.html" class="nav-link" data-i18n="nav.team"></a>
+          <a href="programs.html" class="nav-link" data-i18n="nav.programs"></a>
+          <a href="research-innovation.html" class="nav-link" data-i18n="nav.research"></a>
+          <a href="notices.html" class="nav-link" data-i18n="nav.notices"></a>
+          <a href="gallery.html" class="nav-link" data-i18n="nav.gallery"></a>
           <a href="contact.html" class="nav-link" data-i18n="nav.contact"></a>
         </nav>
 
         <div class="nav-controls">
-          <button class="chip-toggle" data-lang-toggle="en" type="button">
-            EN
-          </button>
-          <button class="chip-toggle" data-lang-toggle="np" type="button">
-            ने
-          </button>
-          <button class="theme-toggle" type="button" aria-label="Toggle theme">
-            🌙
-          </button>
+          <button class="chip-toggle" data-lang-toggle="en" type="button">EN</button>
+          <button class="chip-toggle" data-lang-toggle="np" type="button">ने</button>
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">🌙</button>
         </div>
       </div>
     </header>
 
-    <!-- MAIN -->
-        <!-- MAIN -->
-    <main>
-      <section class="section">
-        <div class="container">
-          <div class="section-header section-header-left">
-            <h1 class="section-title">Contact</h1>
-            <p class="section-subtitle section-subtitle-narrow">
-              Reach out for research collaboration, consultancy or exam preparation inquiries.
-            </p>
-          </div>
+    <main><section class="section"><div class="container"><div class="section-header section-header-left"><h1 class="section-title" data-i18n="contact.title"></h1><p class="section-subtitle section-subtitle-narrow" data-i18n="contact.sub"></p></div><div class="contact-grid"><form class="contact-form" id="contact-form"><div id="contact-alert" class="contact-alert" role="status"></div><div class="form-row form-row-2"><div class="form-field"><label for="contact-name" data-i18n="contact.form.name"></label><input id="contact-name" type="text" name="name" placeholder="Your full name" required /></div><div class="form-field"><label for="contact-email" data-i18n="contact.form.email"></label><input id="contact-email" type="email" name="email" placeholder="you@example.com" required /></div></div><div class="form-row form-row-2"><div class="form-field"><label for="contact-phone" data-i18n="contact.form.phone"></label><input id="contact-phone" type="tel" name="phone" placeholder="+977 ..." /></div><div class="form-field"><label for="contact-type" data-i18n="contact.form.type"></label><select id="contact-type" name="type"><option value="general" data-i18n="contact.form.type.general"></option><option value="research" data-i18n="contact.form.type.research"></option><option value="training" data-i18n="contact.form.type.training"></option><option value="sikshak" data-i18n="contact.form.type.sikshak"></option></select></div></div><div class="form-row"><div class="form-field"><label for="contact-subject" data-i18n="contact.form.subject"></label><input id="contact-subject" type="text" name="subject" placeholder="Short summary of your message" required /></div></div><div class="form-row"><div class="form-field"><label for="contact-message" data-i18n="contact.form.message"></label><textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea></div></div><div class="form-row"><button type="submit" class="btn btn-primary contact-submit" data-i18n="contact.form.submit"></button></div></form><aside class="contact-card"><h2 class="contact-card-title" data-i18n="contact.info.title"></h2><p class="contact-card-text" data-i18n="contact.info.address"></p><dl class="contact-card-list"><div class="contact-card-row"><dt data-i18n="contact.info.email"></dt><dd><a href="mailto:arcbhattarai11@gmail.com">arcbhattarai11@gmail.com</a></dd></div><div class="contact-card-row"><dt data-i18n="contact.info.phone"></dt><dd><a href="tel:9848023682">9848023682</a></dd></div></dl><p class="contact-card-note" data-i18n="contact.info.note"></p></aside></div></div></section></main>
 
-          <div class="contact-grid">
-            <!-- LEFT: FORM -->
-            <form class="contact-form">
-              <div class="form-row form-row-2">
-                <div class="form-field">
-                  <label for="contact-name">Full name</label>
-                  <input
-                    id="contact-name"
-                    type="text"
-                    name="name"
-                    placeholder="Your full name"
-                  />
-                </div>
-
-                <div class="form-field">
-                  <label for="contact-email">Email</label>
-                  <input
-                    id="contact-email"
-                    type="email"
-                    name="email"
-                    placeholder="you@example.com"
-                  />
-                </div>
-              </div>
-
-              <div class="form-row form-row-2">
-                <div class="form-field">
-                  <label for="contact-phone">Phone</label>
-                  <input
-                    id="contact-phone"
-                    type="tel"
-                    name="phone"
-                    placeholder="+977 ..."
-                  />
-                </div>
-
-                <div class="form-field">
-                  <label for="contact-type">Type of inquiry</label>
-                  <select id="contact-type" name="type">
-                    <option value="general">General Inquiry</option>
-                    <option value="research">Research & Consultancy</option>
-                    <option value="loksewa">Loksewa Preparation</option>
-                    <option value="sikshak">Sikshak Sewa Preparation</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-field">
-                  <label for="contact-subject">Subject</label>
-                  <input
-                    id="contact-subject"
-                    type="text"
-                    name="subject"
-                    placeholder="Short summary of your message"
-                  />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-field">
-                  <label for="contact-message">Message</label>
-                  <textarea
-                    id="contact-message"
-                    name="message"
-                    rows="5"
-                    placeholder="Write your message here..."
-                  ></textarea>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <button type="submit" class="btn btn-primary contact-submit">
-                  Send message
-                </button>
-              </div>
-            </form>
-
-            <!-- RIGHT: ORGANIZATION CARD -->
-            <aside class="contact-card">
-              <h2 class="contact-card-title">Organization details</h2>
-              <p class="contact-card-text">
-                Kathmandu, Nepal (exact address can be updated later).
-              </p>
-
-              <dl class="contact-card-list">
-                <div class="contact-card-row">
-                  <dt>Email</dt>
-                  <dd>
-                    <a href="mailto:arcbhattarai11@gmail.com">
-                      arcbhattarai11@gmail.com
-                    </a>
-                  </dd>
-                </div>
-                <div class="contact-card-row">
-                  <dt>Phone</dt>
-                  <dd>
-                    <a href="tel:9848023682">9848023682</a>
-                  </dd>
-                </div>
-              </dl>
-
-              <p class="contact-card-note">
-                You can also reach us via the WhatsApp button on the bottom right.
-              </p>
-            </aside>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-col footer-left">
+          <h3 class="footer-brand">Achaman Creative Solutions Pvt. Ltd.</h3>
+          <p class="footer-tagline">Education Development • Research • Training</p>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-envelope"></i> arcbhattarai11@gmail.com</li>
+            <li><i class="fa-solid fa-phone"></i> +977 9848023682</li>
+            <li><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-links">
+          <h4>Quick Links</h4>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="services.html" data-i18n="nav.services">Services</a>
+          <a href="programs.html" data-i18n="nav.programs">Programs</a>
+          <a href="research-innovation.html" data-i18n="nav.research">Research & Proposals</a>
+          <a href="notices.html" data-i18n="nav.notices">Notices</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </div>
+        <div class="footer-col footer-right">
+          <h4>Connect with us</h4>
+          <div class="footer-social-icons">
+            <a href="#" class="footer-icon-btn fb-btn" data-fb-link><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/9848023682" class="footer-icon-btn wa-btn"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
-      </section>
-    </main>
-
-    
-
-    <!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-
-    <!-- LEFT COLUMN -->
-    <div class="footer-col footer-left">
-      <h3 class="footer-brand">Achaman Creative Solutions Pvt. Ltd.</h3>
-      <p class="footer-tagline">Research • Innovation • Pedagogy</p>
-
-      <ul class="footer-contact">
-        <li><i class="fa-solid fa-envelope"></i> arcbhattarai11@gmail.com</li>
-        <li><i class="fa-solid fa-phone"></i> +977 9848023682</li>
-        <li><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal</li>
-      </ul>
-    </div>
-
-    <!-- MIDDLE COLUMN -->
-    <div class="footer-col footer-links">
-      <h4>Quick Links</h4>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="research-innovation.html">Research & Innovation</a>
-      <a href="exam-preparation.html">Exam Preparation</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="footer-col footer-right">
-      <h4>Connect with us</h4>
-      <div class="footer-social-icons">
-        <a href="#" class="footer-icon-btn fb-btn"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://wa.me/9848023682" class="footer-icon-btn wa-btn"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
-    </div>
+      <div class="footer-bottom">© 2026 Achaman Creative Solutions. All rights reserved.</div>
+    </footer>
 
-  </div>
-
-  <div class="footer-bottom">
-    © 2025 Achaman Creative Solutions. All rights reserved.
-  </div>
-</footer>
-
-
-    <!-- WhatsApp FAB -->
     <button class="whatsapp-fab" aria-label="Chat on WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</button>
-
+      <i class="fa-brands fa-whatsapp"></i>
+    </button>
 
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>

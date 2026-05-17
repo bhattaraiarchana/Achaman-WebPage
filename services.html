@@ -6,16 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="theme-light">
-    <!-- HEADER -->
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("achamanTheme");
+          if (savedTheme === "dark") {
+            document.body.classList.remove("theme-light");
+            document.body.classList.add("theme-dark");
+            document.documentElement.classList.add("theme-dark");
+          }
+        } catch (error) {
+          // Keep the default light theme if browser preference storage is unavailable.
+        }
+      })();
+    </script>
     <header class="navbar">
       <div class="container nav-inner">
         <div class="brand">
@@ -26,131 +38,64 @@
           </div>
         </div>
 
-        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
 
         <nav class="nav-links">
           <a href="index.html" class="nav-link" data-i18n="nav.home"></a>
           <a href="about.html" class="nav-link" data-i18n="nav.about"></a>
           <a href="services.html" class="nav-link" data-i18n="nav.services"></a>
-          <a
-            href="research-innovation.html"
-            class="nav-link"
-            data-i18n="nav.research"
-          ></a>
-          <a
-            href="exam-preparation.html"
-            class="nav-link"
-            data-i18n="nav.examPrep"
-          ></a>
-          <a href="team.html" class="nav-link" data-i18n="nav.team"></a>
+          <a href="programs.html" class="nav-link" data-i18n="nav.programs"></a>
+          <a href="research-innovation.html" class="nav-link" data-i18n="nav.research"></a>
+          <a href="notices.html" class="nav-link" data-i18n="nav.notices"></a>
+          <a href="gallery.html" class="nav-link" data-i18n="nav.gallery"></a>
           <a href="contact.html" class="nav-link" data-i18n="nav.contact"></a>
         </nav>
 
         <div class="nav-controls">
-          <button class="chip-toggle" data-lang-toggle="en" type="button">
-            EN
-          </button>
-          <button class="chip-toggle" data-lang-toggle="np" type="button">
-            ने
-          </button>
-          <button class="theme-toggle" type="button" aria-label="Toggle theme">
-            🌙
-          </button>
+          <button class="chip-toggle" data-lang-toggle="en" type="button">EN</button>
+          <button class="chip-toggle" data-lang-toggle="np" type="button">ने</button>
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">🌙</button>
         </div>
       </div>
     </header>
 
-    <!-- MAIN -->
-    <main>
-      <section class="section">
-        <div class="container">
-          <div class="section-header section-header-left">
-           <h1 class="section-title" data-i18n="services.title"></h1>
-           <p class="section-subtitle section-subtitle-narrow" data-i18n="services.sub"></p>
-       </div>
+    <main><section class="section"><div class="container"><div class="section-header section-header-left"><h1 class="section-title" data-i18n="services.title"></h1><p class="section-subtitle section-subtitle-narrow" data-i18n="services.sub"></p></div><div class="grid-3"><article class="card"><h3 class="card-title" data-i18n="home.service.training.title"></h3><p class="card-text" data-i18n="home.service.training.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.service.research.title"></h3><p class="card-text" data-i18n="home.service.research.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.service.proposal.title"></h3><p class="card-text" data-i18n="home.service.proposal.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.service.design.title"></h3><p class="card-text" data-i18n="home.service.design.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.service.workshops.title"></h3><p class="card-text" data-i18n="home.service.workshops.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.service.shikshak.title"></h3><p class="card-text" data-i18n="home.service.shikshak.text"></p></article></div></div></section></main>
 
-
-          <div class="grid-3">
-            <article class="card">
-              <h2 class="card-title" data-i18n="services.1.title"></h2>
-              <p class="card-text" data-i18n="services.1.text"></p>
-            </article>
-            <article class="card">
-              <h2 class="card-title" data-i18n="services.2.title"></h2>
-              <p class="card-text" data-i18n="services.2.text"></p>
-            </article>
-            <article class="card">
-              <h2 class="card-title" data-i18n="services.3.title"></h2>
-              <p class="card-text" data-i18n="services.3.text"></p>
-            </article>
-            <article class="card">
-              <h2 class="card-title" data-i18n="services.4.title"></h2>
-              <p class="card-text" data-i18n="services.4.text"></p>
-            </article>
-            <article class="card">
-              <h2 class="card-title" data-i18n="services.5.title"></h2>
-              <p class="card-text" data-i18n="services.5.text"></p>
-            </article>
-            <article class="card">
-              <h2 class="card-title" data-i18n="services.6.title"></h2>
-              <p class="card-text" data-i18n="services.6.text"></p>
-            </article>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-col footer-left">
+          <h3 class="footer-brand">Achaman Creative Solutions Pvt. Ltd.</h3>
+          <p class="footer-tagline">Education Development • Research • Training</p>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-envelope"></i> arcbhattarai11@gmail.com</li>
+            <li><i class="fa-solid fa-phone"></i> +977 9848023682</li>
+            <li><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-links">
+          <h4>Quick Links</h4>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="services.html" data-i18n="nav.services">Services</a>
+          <a href="programs.html" data-i18n="nav.programs">Programs</a>
+          <a href="research-innovation.html" data-i18n="nav.research">Research & Proposals</a>
+          <a href="notices.html" data-i18n="nav.notices">Notices</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </div>
+        <div class="footer-col footer-right">
+          <h4>Connect with us</h4>
+          <div class="footer-social-icons">
+            <a href="#" class="footer-icon-btn fb-btn" data-fb-link><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/9848023682" class="footer-icon-btn wa-btn"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-
-    <!-- LEFT COLUMN -->
-    <div class="footer-col footer-left">
-      <h3 class="footer-brand">Achaman Creative Solutions Pvt. Ltd.</h3>
-      <p class="footer-tagline">Research • Innovation • Pedagogy</p>
-
-      <ul class="footer-contact">
-        <li><i class="fa-solid fa-envelope"></i> arcbhattarai11@gmail.com</li>
-        <li><i class="fa-solid fa-phone"></i> +977 9848023682</li>
-        <li><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal</li>
-      </ul>
-    </div>
-
-    <!-- MIDDLE COLUMN -->
-    <div class="footer-col footer-links">
-      <h4>Quick Links</h4>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="research-innovation.html">Research & Innovation</a>
-      <a href="exam-preparation.html">Exam Preparation</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="footer-col footer-right">
-      <h4>Connect with us</h4>
-      <div class="footer-social-icons">
-        <a href="#" class="footer-icon-btn fb-btn"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://wa.me/9848023682" class="footer-icon-btn wa-btn"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
-    </div>
+      <div class="footer-bottom">© 2026 Achaman Creative Solutions. All rights reserved.</div>
+    </footer>
 
-  </div>
-
-  <div class="footer-bottom">
-    © 2025 Achaman Creative Solutions. All rights reserved.
-  </div>
-</footer>
-
-
-
-    <!-- WhatsApp FAB -->
     <button class="whatsapp-fab" aria-label="Chat on WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</button>
-
+      <i class="fa-brands fa-whatsapp"></i>
+    </button>
 
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
