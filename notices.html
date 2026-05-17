@@ -30,7 +30,7 @@
           <a href="index.html" class="nav-link" data-i18n="nav.home"></a>
           <a href="about.html" class="nav-link" data-i18n="nav.about"></a>
           <a href="services.html" class="nav-link" data-i18n="nav.services"></a>
-          <a href="exam-preparation.html" class="nav-link" data-i18n="nav.programs"></a>
+          <a href="programs.html" class="nav-link" data-i18n="nav.programs"></a>
           <a href="research-innovation.html" class="nav-link" data-i18n="nav.research"></a>
           <a href="notices.html" class="nav-link" data-i18n="nav.notices"></a>
           <a href="gallery.html" class="nav-link" data-i18n="nav.gallery"></a>
@@ -45,7 +45,26 @@
       </div>
     </header>
 
-    <main><section class="section"><div class="container"><div class="section-header section-header-left"><h1 class="section-title" data-i18n="notices.title"></h1><p class="section-subtitle section-subtitle-narrow" data-i18n="notices.sub"></p></div><div class="grid-3"><article class="card"><h3 class="card-title" data-i18n="home.featured.1.title"></h3><p class="card-text" data-i18n="home.featured.1.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.featured.2.title"></h3><p class="card-text" data-i18n="home.featured.2.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.featured.3.title"></h3><p class="card-text" data-i18n="home.featured.3.text"></p></article></div></div></section></main>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header section-header-left">
+            <h1 class="section-title" data-i18n="notices.title"></h1>
+            <p class="section-subtitle section-subtitle-narrow" data-i18n="notices.sub"></p>
+          </div>
+          <div class="filter-row" aria-label="Notice filters">
+            <button class="filter-btn active" data-notice-filter="All" type="button">All</button>
+            <button class="filter-btn" data-notice-filter="Training" type="button">Training</button>
+            <button class="filter-btn" data-notice-filter="Research" type="button">Research</button>
+            <button class="filter-btn" data-notice-filter="Proposal Writing" type="button">Proposal Writing</button>
+            <button class="filter-btn" data-notice-filter="Shikshak Sewa" type="button">Shikshak Sewa</button>
+            <button class="filter-btn" data-notice-filter="Workshop" type="button">Workshop</button>
+            <button class="filter-btn" data-notice-filter="Urgent" type="button">Urgent</button>
+          </div>
+          <div class="notice-grid" data-notice-list></div>
+        </div>
+      </section>
+    </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
@@ -62,7 +81,7 @@
           <h4>Quick Links</h4>
           <a href="about.html" data-i18n="nav.about">About</a>
           <a href="services.html" data-i18n="nav.services">Services</a>
-          <a href="exam-preparation.html" data-i18n="nav.programs">Programs</a>
+          <a href="programs.html" data-i18n="nav.programs">Programs</a>
           <a href="research-innovation.html" data-i18n="nav.research">Research & Proposals</a>
           <a href="notices.html" data-i18n="nav.notices">Notices</a>
           <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
