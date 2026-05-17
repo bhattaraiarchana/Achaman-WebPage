@@ -13,10 +13,10 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="theme-light ">
+  <body class="theme-light">
     <header class="navbar">
       <div class="container nav-inner">
-        <div class="brand" role="button" tabindex="0">
+        <div class="brand">
           <img src="assets/img/logo.png" alt="Achaman Creative Solutions logo" />
           <div class="brand-text">
             <span class="brand-name-ne">आचमन</span>
@@ -26,13 +26,14 @@
 
         <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
 
-        <nav class="nav-links" aria-label="Primary navigation">
+        <nav class="nav-links">
           <a href="index.html" class="nav-link" data-i18n="nav.home"></a>
           <a href="about.html" class="nav-link" data-i18n="nav.about"></a>
           <a href="services.html" class="nav-link" data-i18n="nav.services"></a>
+          <a href="exam-preparation.html" class="nav-link" data-i18n="nav.programs"></a>
           <a href="research-innovation.html" class="nav-link" data-i18n="nav.research"></a>
-          <a href="exam-preparation.html" class="nav-link" data-i18n="nav.examPrep"></a>
-          <a href="team.html" class="nav-link" data-i18n="nav.team"></a>
+          <a href="notices.html" class="nav-link" data-i18n="nav.notices"></a>
+          <a href="gallery.html" class="nav-link" data-i18n="nav.gallery"></a>
           <a href="contact.html" class="nav-link" data-i18n="nav.contact"></a>
         </nav>
 
@@ -45,73 +46,77 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero hero-institutional">
         <div class="container hero-grid">
           <div>
-            <div class="badge" data-home="badge" data-i18n="home.badge"></div>
-            <h1 class="hero-title" data-home="title" data-i18n="home.heroTitle"></h1>
-            <p class="hero-subtitle" data-home="subtitle" data-i18n="home.heroSubtitle"></p>
-
+            <div class="badge" data-i18n="home.badge"></div>
+            <h1 class="hero-title" data-i18n="home.heroTitle"></h1>
+            <p class="hero-subtitle" data-i18n="home.heroSubtitle"></p>
             <div class="hero-actions">
-              <a href="services.html" class="btn btn-primary" data-home="primaryCta" data-i18n="home.btnServices"></a>
-              <a href="exam-preparation.html" class="btn btn-outline" data-home="secondaryCta" data-i18n="home.btnClasses"></a>
+              <a href="exam-preparation.html" class="btn btn-primary" data-i18n="home.cta.programs"></a>
+              <a href="contact.html" class="btn btn-outline" data-i18n="home.cta.collab"></a>
+              <a href="notices.html" class="btn btn-outline" data-i18n="home.cta.notices"></a>
             </div>
-
-            <div class="hero-stats" data-home-stats></div>
           </div>
-
-          <aside class="hero-card">
-            <h2 class="hero-card-title" data-home="featureTitle" data-i18n="home.cardTitle"></h2>
-            <p class="hero-card-text" data-home="featureText" data-i18n="home.cardText"></p>
+          <aside class="hero-card institutional-card">
+            <h2 class="hero-card-title">Education-development partner</h2>
+            <p class="hero-card-text">Teacher training, research, proposal writing, documentation and collaborative learning support for education stakeholders across Nepal.</p>
           </aside>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-header section-header-left">
-            <h2 class="section-title" data-home="sectionTitle" data-i18n="home.sectionWhy"></h2>
-            <p class="section-subtitle section-subtitle-narrow" data-home="sectionSubtitle" data-i18n="home.sectionWhySub"></p>
-          </div>
-
-          <div class="grid-3" data-home-highlights></div>
+      <section class="notice-banner">
+        <div class="container notice-banner-inner">
+          <strong data-i18n="home.notice.title"></strong>
+          <p data-i18n="home.notice.text"></p>
+          <a href="notices.html" class="btn btn-outline" data-i18n="nav.notices"></a>
         </div>
       </section>
+
+      <section class="section"><div class="container"><div class="section-header section-header-left"><h2 class="section-title" data-i18n="home.work.title"></h2><p class="section-subtitle section-subtitle-narrow" data-i18n="home.work.sub"></p></div><div class="grid-3"><article class="card"><h3 class="card-title" data-i18n="home.work.ngo.title"></h3><p class="card-text" data-i18n="home.work.ngo.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.work.local.title"></h3><p class="card-text" data-i18n="home.work.local.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.work.schools.title"></h3><p class="card-text" data-i18n="home.work.schools.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.work.teachers.title"></h3><p class="card-text" data-i18n="home.work.teachers.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.work.researchers.title"></h3><p class="card-text" data-i18n="home.work.researchers.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.work.students.title"></h3><p class="card-text" data-i18n="home.work.students.text"></p></article></div></div></section>
+
+      <section class="section section-soft"><div class="container"><div class="section-header section-header-left"><h2 class="section-title" data-i18n="home.services.title"></h2><p class="section-subtitle section-subtitle-narrow" data-i18n="home.services.sub"></p></div><div class="grid-3"><article class="card"><h3 class="card-title" data-i18n="home.service.training.title"></h3><p class="card-text" data-i18n="home.service.training.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.service.research.title"></h3><p class="card-text" data-i18n="home.service.research.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.service.proposal.title"></h3><p class="card-text" data-i18n="home.service.proposal.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.service.design.title"></h3><p class="card-text" data-i18n="home.service.design.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.service.workshops.title"></h3><p class="card-text" data-i18n="home.service.workshops.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.service.shikshak.title"></h3><p class="card-text" data-i18n="home.service.shikshak.text"></p></article></div></div></section>
+
+      <section class="section"><div class="container"><div class="section-header section-header-left"><h2 class="section-title" data-i18n="home.process.title"></h2><p class="section-subtitle section-subtitle-narrow" data-i18n="home.process.sub"></p></div><div class="process-grid"><article class="process-step"><span>1</span><h3 data-i18n="home.process.1.title"></h3><p data-i18n="home.process.1.text"></p></article><article class="process-step"><span>2</span><h3 data-i18n="home.process.2.title"></h3><p data-i18n="home.process.2.text"></p></article><article class="process-step"><span>3</span><h3 data-i18n="home.process.3.title"></h3><p data-i18n="home.process.3.text"></p></article><article class="process-step"><span>4</span><h3 data-i18n="home.process.4.title"></h3><p data-i18n="home.process.4.text"></p></article><article class="process-step"><span>5</span><h3 data-i18n="home.process.5.title"></h3><p data-i18n="home.process.5.text"></p></article></div></div></section>
+
+      <section class="section section-soft"><div class="container"><div class="section-header section-header-left"><h2 class="section-title" data-i18n="home.featured.title"></h2><p class="section-subtitle section-subtitle-narrow" data-i18n="home.featured.sub"></p></div><div class="grid-3"><article class="card"><h3 class="card-title" data-i18n="home.featured.1.title"></h3><p class="card-text" data-i18n="home.featured.1.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.featured.2.title"></h3><p class="card-text" data-i18n="home.featured.2.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.featured.3.title"></h3><p class="card-text" data-i18n="home.featured.3.text"></p></article></div></div></section>
+
+      <section class="section"><div class="container"><div class="section-header section-header-left"><h2 class="section-title" data-i18n="home.gallery.title"></h2><p class="section-subtitle section-subtitle-narrow" data-i18n="home.gallery.sub"></p></div><div class="grid-3"><article class="gallery-placeholder"><div class="gallery-placeholder-box"><i class="fa-regular fa-image"></i></div><h3>Training moments</h3><p data-i18n="home.gallery.placeholder"></p></article><article class="gallery-placeholder"><div class="gallery-placeholder-box"><i class="fa-regular fa-image"></i></div><h3>Workshop activities</h3><p data-i18n="home.gallery.placeholder"></p></article><article class="gallery-placeholder"><div class="gallery-placeholder-box"><i class="fa-regular fa-image"></i></div><h3>Field collaboration</h3><p data-i18n="home.gallery.placeholder"></p></article></div></div></section>
+
+      <section class="section section-soft"><div class="container"><div class="section-header section-header-left"><h2 class="section-title" data-i18n="home.notices.title"></h2><p class="section-subtitle section-subtitle-narrow" data-i18n="home.notices.sub"></p></div><div class="grid-3"><article class="card"><h3 class="card-title" data-i18n="home.featured.1.title"></h3><p class="card-text" data-i18n="home.featured.1.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.featured.2.title"></h3><p class="card-text" data-i18n="home.featured.2.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.featured.3.title"></h3><p class="card-text" data-i18n="home.featured.3.text"></p></article></div></div></section>
+
+      <section class="section"><div class="container"><div class="contact-cta-card"><div><h2 data-i18n="home.contact.title"></h2><p data-i18n="home.contact.text"></p></div><a href="contact.html" class="btn btn-primary" data-i18n="home.cta.collab"></a></div></div></section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-col footer-left">
           <h3 class="footer-brand">Achaman Creative Solutions Pvt. Ltd.</h3>
-          <p class="footer-tagline">Research • Innovation • Pedagogy</p>
-
+          <p class="footer-tagline">Education Development • Research • Training</p>
           <ul class="footer-contact">
-            <li><i class="fa-solid fa-envelope"></i> <span data-site-email>arcbhattarai11@gmail.com</span></li>
-            <li><i class="fa-solid fa-phone"></i> <span data-site-phone>+977 9848023682</span></li>
-            <li><i class="fa-solid fa-location-dot"></i> <span data-site-location>Kathmandu, Nepal</span></li>
+            <li><i class="fa-solid fa-envelope"></i> arcbhattarai11@gmail.com</li>
+            <li><i class="fa-solid fa-phone"></i> +977 9848023682</li>
+            <li><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal</li>
           </ul>
         </div>
-
         <div class="footer-col footer-links">
           <h4>Quick Links</h4>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="research-innovation.html">Research & Innovation</a>
-          <a href="exam-preparation.html">Exam Preparation</a>
-          <a href="team.html">Team</a>
-          <a href="contact.html">Contact</a>
-
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="services.html" data-i18n="nav.services">Services</a>
+          <a href="exam-preparation.html" data-i18n="nav.programs">Programs</a>
+          <a href="research-innovation.html" data-i18n="nav.research">Research & Proposals</a>
+          <a href="notices.html" data-i18n="nav.notices">Notices</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </div>
-
         <div class="footer-col footer-right">
           <h4>Connect with us</h4>
           <div class="footer-social-icons">
-            <a href="#" class="footer-icon-btn fb-btn" data-fb-link aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://wa.me/9848023682" class="footer-icon-btn wa-btn" data-whatsapp-link aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="footer-icon-btn fb-btn" data-fb-link><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/9848023682" class="footer-icon-btn wa-btn"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
-
       <div class="footer-bottom">© 2026 Achaman Creative Solutions. All rights reserved.</div>
     </footer>
 
@@ -120,7 +125,6 @@
     </button>
 
     <script src="assets/js/i18n.js"></script>
-    <script src="assets/js/content.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

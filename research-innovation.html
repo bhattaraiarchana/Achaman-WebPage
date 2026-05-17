@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Achaman | Research & Innovation</title>
+    <title>Achaman | Research & Proposals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link
@@ -13,10 +13,10 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="theme-light ">
+  <body class="theme-light">
     <header class="navbar">
       <div class="container nav-inner">
-        <div class="brand" role="button" tabindex="0">
+        <div class="brand">
           <img src="assets/img/logo.png" alt="Achaman Creative Solutions logo" />
           <div class="brand-text">
             <span class="brand-name-ne">आचमन</span>
@@ -26,13 +26,14 @@
 
         <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
 
-        <nav class="nav-links" aria-label="Primary navigation">
+        <nav class="nav-links">
           <a href="index.html" class="nav-link" data-i18n="nav.home"></a>
           <a href="about.html" class="nav-link" data-i18n="nav.about"></a>
           <a href="services.html" class="nav-link" data-i18n="nav.services"></a>
+          <a href="exam-preparation.html" class="nav-link" data-i18n="nav.programs"></a>
           <a href="research-innovation.html" class="nav-link" data-i18n="nav.research"></a>
-          <a href="exam-preparation.html" class="nav-link" data-i18n="nav.examPrep"></a>
-          <a href="team.html" class="nav-link" data-i18n="nav.team"></a>
+          <a href="notices.html" class="nav-link" data-i18n="nav.notices"></a>
+          <a href="gallery.html" class="nav-link" data-i18n="nav.gallery"></a>
           <a href="contact.html" class="nav-link" data-i18n="nav.contact"></a>
         </nav>
 
@@ -44,60 +45,37 @@
       </div>
     </header>
 
-    <main>
-      <section class="section">
-        <div class="container">
-          <div class="section-header section-header-left">
-            <h1 class="section-title" data-research="title" data-i18n="research.title"></h1>
-            <p class="section-subtitle section-subtitle-narrow" data-research="subtitle" data-i18n="research.sub"></p>
-          </div>
-
-          <div class="grid-3" data-research-grid></div>
-
-          <section class="section section-compact">
-            <div class="section-header section-header-left">
-              <h2 class="section-title" data-research="projectsTitle"></h2>
-              <p class="section-subtitle section-subtitle-narrow" data-research="projectsSubtitle"></p>
-            </div>
-            <div class="grid-3" data-projects-grid></div>
-          </section>
-        </div>
-      </section>
-    </main>
+    <main><section class="section"><div class="container"><div class="section-header section-header-left"><h1 class="section-title" data-i18n="research.title"></h1><p class="section-subtitle section-subtitle-narrow" data-i18n="research.sub"></p></div><div class="grid-3"><article class="card"><h3 class="card-title" data-i18n="home.service.research.title"></h3><p class="card-text" data-i18n="home.service.research.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.service.proposal.title"></h3><p class="card-text" data-i18n="home.service.proposal.text"></p></article><article class="card"><h3 class="card-title" data-i18n="home.process.4.title"></h3><p class="card-text" data-i18n="home.process.4.text"></p></article></div></div></section></main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-col footer-left">
           <h3 class="footer-brand">Achaman Creative Solutions Pvt. Ltd.</h3>
-          <p class="footer-tagline">Research • Innovation • Pedagogy</p>
-
+          <p class="footer-tagline">Education Development • Research • Training</p>
           <ul class="footer-contact">
-            <li><i class="fa-solid fa-envelope"></i> <span data-site-email>arcbhattarai11@gmail.com</span></li>
-            <li><i class="fa-solid fa-phone"></i> <span data-site-phone>+977 9848023682</span></li>
-            <li><i class="fa-solid fa-location-dot"></i> <span data-site-location>Kathmandu, Nepal</span></li>
+            <li><i class="fa-solid fa-envelope"></i> arcbhattarai11@gmail.com</li>
+            <li><i class="fa-solid fa-phone"></i> +977 9848023682</li>
+            <li><i class="fa-solid fa-location-dot"></i> Kathmandu, Nepal</li>
           </ul>
         </div>
-
         <div class="footer-col footer-links">
           <h4>Quick Links</h4>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="research-innovation.html">Research & Innovation</a>
-          <a href="exam-preparation.html">Exam Preparation</a>
-          <a href="team.html">Team</a>
-          <a href="contact.html">Contact</a>
-
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="services.html" data-i18n="nav.services">Services</a>
+          <a href="exam-preparation.html" data-i18n="nav.programs">Programs</a>
+          <a href="research-innovation.html" data-i18n="nav.research">Research & Proposals</a>
+          <a href="notices.html" data-i18n="nav.notices">Notices</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </div>
-
         <div class="footer-col footer-right">
           <h4>Connect with us</h4>
           <div class="footer-social-icons">
-            <a href="#" class="footer-icon-btn fb-btn" data-fb-link aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://wa.me/9848023682" class="footer-icon-btn wa-btn" data-whatsapp-link aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="footer-icon-btn fb-btn" data-fb-link><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/9848023682" class="footer-icon-btn wa-btn"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
-
       <div class="footer-bottom">© 2026 Achaman Creative Solutions. All rights reserved.</div>
     </footer>
 
@@ -106,7 +84,6 @@
     </button>
 
     <script src="assets/js/i18n.js"></script>
-    <script src="assets/js/content.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
