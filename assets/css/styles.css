@@ -1382,3 +1382,14 @@ textarea:focus {
 .theme-dark .admin-login-error {
   color: #fecaca;
 }
+
+/* Disabled admin placeholder: no frontend credentials or fake auth. */
+.admin-disabled-card {
+  max-width: 760px;
+  margin: 2rem auto;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+}

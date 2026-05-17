@@ -310,17 +310,8 @@ function initContactForm() {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const messages = JSON.parse(localStorage.getItem("achamanMessages") || "[]");
-    messages.unshift({
-      name: form.name.value,
-      email: form.email.value,
-      phone: form.phone.value,
-      type: form.type.value,
-      subject: form.subject.value,
-      message: form.message.value,
-      receivedAt: new Date().toISOString()
-    });
-    localStorage.setItem("achamanMessages", JSON.stringify(messages));
+    // This static site does not persist inquiries in browser storage.
+    // Future Sanity CMS or backend integration should submit this form securely.
 
     if (alertBox) {
       const lang = currentLang();

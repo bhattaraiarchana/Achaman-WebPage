@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Achaman Creative Solutions | Admin</title>
+    <title>Achaman Creative Solutions | Admin Disabled</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link
@@ -14,167 +14,26 @@
     />
   </head>
   <body class="theme-light admin-page">
-    <header class="navbar">
-      <div class="container nav-inner">
-        <div class="brand" role="button" tabindex="0">
-          <img src="assets/img/logo.png" alt="Achaman Creative Solutions logo" />
-          <div class="brand-text">
-            <span class="brand-name-ne">आचमन</span>
-            <span class="brand-name-en">CREATIVE SOLUTIONS</span>
-          </div>
-        </div>
-        <nav class="nav-links admin-nav-links" aria-label="Admin navigation">
-          <a href="index.html" class="nav-link">View Website</a>
-          <a href="contact.html" class="nav-link">Contact Page</a>
-        </nav>
-        <div class="nav-controls">
-          <button class="chip-toggle" data-lang-toggle="en" type="button">EN</button>
-          <button class="chip-toggle" data-lang-toggle="np" type="button">ने</button>
-          <button class="theme-toggle" type="button" aria-label="Toggle theme">🌙</button>
-        </div>
-      </div>
-    </header>
-
     <main class="admin-main">
       <section class="section">
         <div class="container">
-          <div class="admin-login-card" id="admin-login-card">
-            <div>
-              <div class="badge">Admin access</div>
-              <h1 class="section-title">Login to Admin Dashboard</h1>
-              <p class="section-subtitle">
-                Use the administrator credentials to edit bilingual website content, media and contact messages.
-              </p>
+          <article class="admin-disabled-card">
+            <div class="badge">Demo-only area disabled</div>
+            <h1 class="hero-title">Admin dashboard is not available</h1>
+            <p class="hero-subtitle">
+              The previous browser-only admin dashboard has been disabled because frontend-only access gates and browser storage are not secure for production content management.
+            </p>
+            <p class="section-subtitle">
+              Future Sanity CMS integration should provide authenticated content editing through Sanity Studio or a secure backend. No write access values should be shipped in frontend code.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="index.html">Return to website</a>
             </div>
-            <form class="admin-login-form" id="admin-login-form">
-              <label>Username <input id="admin-username" type="text" autocomplete="username" required /></label>
-              <label>Password <input id="admin-password" type="password" autocomplete="current-password" required /></label>
-              <button class="btn btn-primary" type="submit">Login</button>
-              <p class="admin-login-error" id="admin-login-error" role="alert"></p>
-            </form>
-          </div>
-
-          <div class="admin-dashboard" id="admin-dashboard" hidden>
-          <div class="admin-hero">
-            <div>
-              <div class="badge">Client-side CMS</div>
-              <h1 class="hero-title">Admin Dashboard</h1>
-              <p class="hero-subtitle">
-                Update bilingual page content, services, research items, exam programs, team members, images and site settings. Changes are saved in this browser's local storage and reflected immediately on the public pages.
-              </p>
-            </div>
-            <div class="admin-actions">
-              <button class="btn btn-primary" id="save-content" type="button">Save changes</button>
-              <button class="btn btn-outline" id="export-content" type="button">Export JSON</button>
-              <label class="btn btn-outline" for="import-content">Import JSON</label>
-              <input id="import-content" type="file" accept="application/json" hidden />
-              <button class="btn btn-outline danger-btn" id="reset-content" type="button">Reset demo content</button>
-              <button class="btn btn-outline" id="admin-logout" type="button">Logout</button>
-            </div>
-          </div>
-
-          <div id="admin-alert" class="contact-alert" role="status"></div>
-
-          <div class="admin-grid">
-            <aside class="admin-sidebar">
-              <button class="admin-tab active" data-admin-tab="site">Site settings</button>
-              <button class="admin-tab" data-admin-tab="pages">Pages</button>
-              <button class="admin-tab" data-admin-tab="services">Services</button>
-              <button class="admin-tab" data-admin-tab="research">Research</button>
-              <button class="admin-tab" data-admin-tab="exams">Exam programs</button>
-              <button class="admin-tab" data-admin-tab="team">Team</button>
-              <button class="admin-tab" data-admin-tab="messages">Messages</button>
-            </aside>
-
-            <div class="admin-panels">
-              <section class="admin-panel active" data-admin-panel="site">
-                <h2>Site settings</h2>
-                <div class="admin-form-grid">
-                  <label>Organization name <input data-path="site.organizationName" /></label>
-                  <label>Brand Nepali <input data-path="site.brandNe" /></label>
-                  <label>Brand English <input data-path="site.brandEn" /></label>
-                  <label>Tagline English <input data-path="site.tagline.en" /></label>
-                  <label>Tagline Nepali <input data-path="site.tagline.np" /></label>
-                  <label>Email <input data-path="site.contact.email" type="email" /></label>
-                  <label>Phone display <input data-path="site.contact.phone" /></label>
-                  <label>Phone raw <input data-path="site.contact.phoneRaw" /></label>
-                  <label>Location English <input data-path="site.contact.location.en" /></label>
-                  <label>Location Nepali <input data-path="site.contact.location.np" /></label>
-                  <label>Facebook URL <input data-path="site.socials.facebook" /></label>
-                  <label>WhatsApp number <input data-path="site.socials.whatsapp" /></label>
-                </div>
-                <label class="admin-full">Address English <textarea data-path="site.contact.address.en"></textarea></label>
-                <label class="admin-full">Address Nepali <textarea data-path="site.contact.address.np"></textarea></label>
-                <div class="media-uploader">
-                  <div>
-                    <strong>Logo image</strong>
-                    <p>Upload a small optimized image. It is stored as a local data URL for this demo CMS.</p>
-                  </div>
-                  <img id="logo-preview" class="admin-image-preview" alt="Logo preview" />
-                  <input id="logo-upload" type="file" accept="image/*" />
-                </div>
-              </section>
-
-              <section class="admin-panel" data-admin-panel="pages">
-                <h2>Page content</h2>
-                <div id="page-editor"></div>
-              </section>
-
-              <section class="admin-panel" data-admin-panel="services">
-                <div class="admin-panel-header">
-                  <h2>Services</h2>
-                  <button class="btn btn-outline" data-add="services" type="button">Add service</button>
-                </div>
-                <div id="services-editor"></div>
-              </section>
-
-              <section class="admin-panel" data-admin-panel="research">
-                <div class="admin-panel-header">
-                  <h2>Research blocks</h2>
-                  <button class="btn btn-outline" data-add="researchBlocks" type="button">Add block</button>
-                </div>
-                <div id="research-editor"></div>
-                <div class="admin-panel-header admin-subheader">
-                  <h2>Projects & collaborations</h2>
-                  <button class="btn btn-outline" data-add="projects" type="button">Add project</button>
-                </div>
-                <div id="projects-editor"></div>
-              </section>
-
-              <section class="admin-panel" data-admin-panel="exams">
-                <div class="admin-panel-header">
-                  <h2>Exam programs</h2>
-                  <button class="btn btn-outline" data-add="exams" type="button">Add program</button>
-                </div>
-                <div id="exams-editor"></div>
-              </section>
-
-              <section class="admin-panel" data-admin-panel="team">
-                <div class="admin-panel-header">
-                  <h2>Team members</h2>
-                  <button class="btn btn-outline" data-add="team" type="button">Add member</button>
-                </div>
-                <div id="team-editor"></div>
-              </section>
-
-              <section class="admin-panel" data-admin-panel="messages">
-                <h2>Contact messages</h2>
-                <p class="section-subtitle">Messages submitted through the contact form are saved here in this browser for review.</p>
-                <div class="admin-actions inline-actions">
-                  <button class="btn btn-outline" id="clear-messages" type="button">Clear messages</button>
-                </div>
-                <div id="messages-list" class="messages-list"></div>
-              </section>
-            </div>
-          </div>
-          </div>
+          </article>
         </div>
       </section>
     </main>
 
-    <script src="assets/js/i18n.js"></script>
-    <script src="assets/js/content.js"></script>
-    <script src="assets/js/main.js"></script>
     <script src="assets/js/admin.js"></script>
   </body>
 </html>

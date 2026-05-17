@@ -1,9 +1,9 @@
 // assets/js/content.js
-// A lightweight client-side CMS store. It lets the admin dashboard update
-// bilingual content, images and site settings without editing HTML files.
+// Static bilingual content used by the public website.
+// Future Sanity CMS integration should replace this file with read-only fetches
+// from published Sanity content. Do not ship write access values here.
 
 const ACHAMAN_CONTENT_VERSION = 1;
-const ACHAMAN_CONTENT_KEY = "achamanContent";
 
 const defaultContent = {
   version: ACHAMAN_CONTENT_VERSION,
@@ -211,25 +211,20 @@ function cloneContent(value) {
 }
 
 function getStoredContent() {
-  try {
-    const stored = localStorage.getItem(ACHAMAN_CONTENT_KEY);
-    if (!stored) return cloneContent(defaultContent);
-    return deepMerge(cloneContent(defaultContent), JSON.parse(stored));
-  } catch (error) {
-    console.warn("Could not load saved Achaman content.", error);
-    return cloneContent(defaultContent);
-  }
+  // Public pages currently render static checked-in content only.
+  // Future Sanity CMS integration should fetch published content here.
+  return cloneContent(defaultContent);
 }
 
 function saveStoredContent(content) {
+  // Intentionally does not persist in localStorage: browser storage is not a CMS.
+  // Future Sanity CMS writes must happen through a secure backend/CMS studio.
   const nextContent = deepMerge(cloneContent(defaultContent), content || {});
   nextContent.version = ACHAMAN_CONTENT_VERSION;
-  localStorage.setItem(ACHAMAN_CONTENT_KEY, JSON.stringify(nextContent));
   return nextContent;
 }
 
 function resetStoredContent() {
-  localStorage.removeItem(ACHAMAN_CONTENT_KEY);
   return cloneContent(defaultContent);
 }
 
